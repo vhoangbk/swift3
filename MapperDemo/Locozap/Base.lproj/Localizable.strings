@@ -1,0 +1,86 @@
+/* 
+  Localizable.strings
+  Locozap
+
+  Created by MAC on 10/12/16.
+  Copyright © 2016 paraline. All rights reserved.
+*/
+
+// comon
+"btn_ok" = "Ok";
+
+//login
+"login" = "Login";
+"account_facebook" = "Login with Facebook";
+"account_creation" = "Register account";
+"terms_of_use_and_rivacy_policy" = "<font color='white'>By registering, <u>Terms of service</u> as well as <u>privacy policy</u> You agree to.</font>";
+
+//login and register
+"enter_user_name" = "Enter username";
+"enter_password" = "Enter password";
+"enter_re_password" = "Retype Enter password";
+"btn_login" = "Login";
+"btn_register" = "Register";
+"btn_register_account" = "Register new account";
+"title_login" = "Login";
+"title_register" = "Register";
+"user_name_empty" = "User name not empty";
+"password_empty" = "Password not empty";
+"location_empty" = "Please wait get location";
+"password_incorrect" = "Retype password incorrect";
+"create_account_success" = "Create account success";
+// End Login
+
+//message error api
+"message_error_network" = "No connection to the Internet.";
+"error_code_common" = "An error has occurred. Please try again you wait for a while.";
+
+// HomeFragment
+"all_posts" = "All posts";
+"reply_posts" = "Post you reply";
+"text_time_by_day" = "Yesterday";
+
+//MapFragment
+"header_map" = "Map";
+"user_location_shared" = "Location shared";
+"mock_text_english" = "English";
+"mock_text_japan" = "Japanese";
+
+//chat group
+"title_posting" = "Posting";
+"cancel" = "Cancel";
+"send" = "Send";
+
+//chat
+"choose_camera" = "Take a photo";
+"choose_gallery" = "Select from camera roll";
+"choose_share_location" = "Transmit the location information";
+"enter_message" = "Enter the message";
+
+// activity location account info
+"button_chat" = "Chat";
+"button_friend_request" = "Friend request";
+"title_left_tool_bar" = "Tokyo";
+"title_center_tool_bar" = "Tokyo, Shibuya-ku,";
+"name_japan_location_account_info" = "Japanese";
+"name_english_location_account_info" = "English";
+"name_portuguese_location_account_info" = "Portuguese";
+
+// post menu view
+"post_food"= "Let's go food";
+"post_drink"= "Let's go drink";
+"post_play"= "Let's go play";
+"post_help"= "I want help";
+
+// activity post
+"activity_post_menu_left" = "Cancel";
+"activity_post_menu_right" = "Continue";
+"activity_post_menu_center" = "I want you to tell me";
+
+"activity_post_during_loading" = "During loading";
+"activity_post_today" = "Today";
+"activity_post_tomorrow" = "Tomorrow";
+"activity_post_date_specified" = "Date specified";
+
+"activity_post_enter_title" = "Enter title";
+"activity_post_contents" = "Contents of the text (up to 2000 characters)";

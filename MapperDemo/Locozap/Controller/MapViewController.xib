@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="hirakakupro-w3.otf">
+            <string>HiraKakuPro-W3</string>
+        </array>
+        <array key="hirakakupro-w6.otf">
+            <string>HiraKakuPro-W6</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MapViewController" customModule="Locozap" customModuleProvider="target">
+            <connections>
+                <outlet property="mImageAvatar" destination="jak-CK-gxn" id="WPW-Ox-FUD"/>
+                <outlet property="mImageFlag" destination="QPv-zE-GFY" id="ZCo-X5-Cs9"/>
+                <outlet property="mLblNumberLike" destination="xDj-ly-Cv5" id="bwT-nO-lCr"/>
+                <outlet property="mMapView" destination="zOb-xE-1vI" id="GmD-Qv-Bp4"/>
+                <outlet property="mUserName" destination="Yi9-p6-00B" id="wVv-Nf-oKc"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7K1-R6-LtL">
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.82745098039999998" blue="0.01176470588" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="XFz-Jd-Lge"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xae-eD-a3n" userLabel="tool bar">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_user_map" translatesAutoresizingMaskIntoConstraints="NO" id="qMa-RQ-81z"/>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar_mock_map_user_share_location" translatesAutoresizingMaskIntoConstraints="NO" id="gCo-hJ-Ghi"/>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_history" translatesAutoresizingMaskIntoConstraints="NO" id="TcA-92-EP0"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="位置共有" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W8U-Bw-mHo">
+                            <fontDescription key="fontDescription" name="HiraKakuPro-W3" family="Hiragino Kaku Gothic Pro" pointSize="14"/>
+                            <color key="textColor" red="0.99607843139999996" green="0.82745098039999998" blue="0.01176470588" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="マップ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B3m-Hm-iMS">
+                            <fontDescription key="fontDescription" name="HiraKakuPro-W6" family="Hiragino Kaku Gothic Pro" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.99607843139999996" green="0.82745098039999998" blue="0.01176470588" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="TcA-92-EP0" secondAttribute="trailing" constant="10" id="055-h9-h63"/>
+                        <constraint firstItem="B3m-Hm-iMS" firstAttribute="centerX" secondItem="xae-eD-a3n" secondAttribute="centerX" id="5rB-eh-oda"/>
+                        <constraint firstItem="TcA-92-EP0" firstAttribute="centerY" secondItem="xae-eD-a3n" secondAttribute="centerY" id="FG2-h0-4gZ"/>
+                        <constraint firstItem="gCo-hJ-Ghi" firstAttribute="leading" secondItem="qMa-RQ-81z" secondAttribute="leading" constant="2" id="QLa-FT-VGE"/>
+                        <constraint firstAttribute="height" constant="44" id="fXx-U7-kdX"/>
+                        <constraint firstItem="B3m-Hm-iMS" firstAttribute="centerY" secondItem="xae-eD-a3n" secondAttribute="centerY" id="haF-by-FbJ"/>
+                        <constraint firstItem="W8U-Bw-mHo" firstAttribute="centerY" secondItem="xae-eD-a3n" secondAttribute="centerY" id="iCF-wA-lqF"/>
+                        <constraint firstItem="gCo-hJ-Ghi" firstAttribute="centerY" secondItem="xae-eD-a3n" secondAttribute="centerY" id="kjS-DK-A3K"/>
+                        <constraint firstItem="W8U-Bw-mHo" firstAttribute="leading" secondItem="gCo-hJ-Ghi" secondAttribute="trailing" constant="5" id="mJp-Q0-RPX"/>
+                        <constraint firstItem="qMa-RQ-81z" firstAttribute="centerY" secondItem="xae-eD-a3n" secondAttribute="centerY" id="qAx-Mh-qzM"/>
+                        <constraint firstItem="qMa-RQ-81z" firstAttribute="leading" secondItem="xae-eD-a3n" secondAttribute="leading" constant="10" id="t1G-r6-UVG"/>
+                    </constraints>
+                </view>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="zOb-xE-1vI"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H20-Kr-4dL">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar_no_image" translatesAutoresizingMaskIntoConstraints="NO" id="jak-CK-gxn">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="bhd-7m-YMQ"/>
+                                <constraint firstAttribute="width" constant="50" id="u8r-7n-L8k"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flag_italy_map" translatesAutoresizingMaskIntoConstraints="NO" id="QPv-zE-GFY"/>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eXR-32-BOn">
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yi9-p6-00B">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_like_map" translatesAutoresizingMaskIntoConstraints="NO" id="s6f-lt-mma"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xDj-ly-Cv5">
+                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                    <color key="textColor" red="0.99607843139999996" green="0.82745098039999998" blue="0.01176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="English" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rfR-GB-9eH">
+                                    <fontDescription key="fontDescription" name="HiraKakuPro-W3" family="Hiragino Kaku Gothic Pro" pointSize="12"/>
+                                    <color key="textColor" red="0.53333333333333333" green="0.53333333333333333" blue="0.53333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VDp-Tu-749" customClass="RatingBar" customModule="Locozap" customModuleProvider="target">
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="40" id="X9e-VG-Vr9"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                            <real key="value" value="3"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="ratingMax">
+                                            <real key="value" value="3"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="numStars">
+                                            <integer key="value" value="3"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="image" keyPath="imageLight" value="ic_start_activated"/>
+                                        <userDefinedRuntimeAttribute type="image" keyPath="imageDark" value="ic_start_normal"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Japanese" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tTh-9T-XDr">
+                                    <fontDescription key="fontDescription" name="HiraKakuPro-W3" family="Hiragino Kaku Gothic Pro" pointSize="12"/>
+                                    <color key="textColor" red="0.53333333329999999" green="0.53333333329999999" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N8a-Bs-4qs" customClass="RatingBar" customModule="Locozap" customModuleProvider="target">
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                            <real key="value" value="4"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="ratingMax">
+                                            <real key="value" value="6"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="numStars">
+                                            <integer key="value" value="3"/>
+                                        </userDefinedRuntimeAttribute>
+                                        <userDefinedRuntimeAttribute type="image" keyPath="imageLight" value="ic_start_activated"/>
+                                        <userDefinedRuntimeAttribute type="image" keyPath="imageDark" value="ic_start_normal"/>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="s6f-lt-mma" firstAttribute="centerY" secondItem="Yi9-p6-00B" secondAttribute="centerY" id="0mC-N7-G03"/>
+                                <constraint firstItem="VDp-Tu-749" firstAttribute="leading" secondItem="rfR-GB-9eH" secondAttribute="trailing" constant="1" id="5Ag-ac-HNW"/>
+                                <constraint firstItem="tTh-9T-XDr" firstAttribute="height" secondItem="rfR-GB-9eH" secondAttribute="height" id="9IC-1f-0fZ"/>
+                                <constraint firstItem="N8a-Bs-4qs" firstAttribute="centerY" secondItem="tTh-9T-XDr" secondAttribute="centerY" id="9iE-w3-m9y"/>
+                                <constraint firstItem="Yi9-p6-00B" firstAttribute="leading" secondItem="eXR-32-BOn" secondAttribute="leading" id="BHl-5u-JGu"/>
+                                <constraint firstItem="N8a-Bs-4qs" firstAttribute="height" secondItem="VDp-Tu-749" secondAttribute="height" id="IRt-jf-dPh"/>
+                                <constraint firstItem="VDp-Tu-749" firstAttribute="height" secondItem="rfR-GB-9eH" secondAttribute="height" id="N9e-dt-RLs"/>
+                                <constraint firstItem="xDj-ly-Cv5" firstAttribute="centerY" secondItem="s6f-lt-mma" secondAttribute="centerY" id="T34-Vz-9SZ"/>
+                                <constraint firstItem="xDj-ly-Cv5" firstAttribute="leading" secondItem="s6f-lt-mma" secondAttribute="trailing" constant="2" id="WKa-uV-Td2"/>
+                                <constraint firstItem="N8a-Bs-4qs" firstAttribute="width" secondItem="VDp-Tu-749" secondAttribute="width" id="YU2-ZS-01L"/>
+                                <constraint firstItem="s6f-lt-mma" firstAttribute="leading" secondItem="Yi9-p6-00B" secondAttribute="trailing" constant="14" id="ZMh-cE-Ow2"/>
+                                <constraint firstItem="Yi9-p6-00B" firstAttribute="top" secondItem="eXR-32-BOn" secondAttribute="top" id="c5B-uG-NGG"/>
+                                <constraint firstItem="VDp-Tu-749" firstAttribute="top" secondItem="rfR-GB-9eH" secondAttribute="top" id="cil-8W-r61"/>
+                                <constraint firstItem="tTh-9T-XDr" firstAttribute="centerY" secondItem="VDp-Tu-749" secondAttribute="centerY" id="h07-nz-7wp"/>
+                                <constraint firstItem="tTh-9T-XDr" firstAttribute="leading" secondItem="VDp-Tu-749" secondAttribute="trailing" constant="13" id="hun-ce-Oim"/>
+                                <constraint firstAttribute="bottom" secondItem="rfR-GB-9eH" secondAttribute="bottom" id="n8O-PN-m4x"/>
+                                <constraint firstItem="rfR-GB-9eH" firstAttribute="leading" secondItem="eXR-32-BOn" secondAttribute="leading" id="sTK-OM-rXd"/>
+                                <constraint firstAttribute="height" constant="35" id="uVb-hQ-Z1l"/>
+                                <constraint firstItem="N8a-Bs-4qs" firstAttribute="leading" secondItem="tTh-9T-XDr" secondAttribute="trailing" constant="1" id="xE3-8n-2I5"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X11-MA-FLe">
+                            <connections>
+                                <action selector="didPressUserAround:" destination="-1" eventType="touchUpInside" id="Srf-P4-GJB"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.86644847972972971" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="X11-MA-FLe" firstAttribute="width" secondItem="H20-Kr-4dL" secondAttribute="width" id="3cd-3w-iGf"/>
+                        <constraint firstItem="X11-MA-FLe" firstAttribute="top" secondItem="H20-Kr-4dL" secondAttribute="top" id="8aW-G1-bgJ"/>
+                        <constraint firstItem="X11-MA-FLe" firstAttribute="height" secondItem="H20-Kr-4dL" secondAttribute="height" id="9zl-tF-b0g"/>
+                        <constraint firstItem="X11-MA-FLe" firstAttribute="leading" secondItem="H20-Kr-4dL" secondAttribute="leading" id="Ag3-ex-d33"/>
+                        <constraint firstItem="jak-CK-gxn" firstAttribute="leading" secondItem="H20-Kr-4dL" secondAttribute="leading" constant="15" id="FWi-AM-WHl"/>
+                        <constraint firstAttribute="height" constant="84" id="Mbt-5P-cVr"/>
+                        <constraint firstItem="QPv-zE-GFY" firstAttribute="leading" secondItem="jak-CK-gxn" secondAttribute="trailing" constant="-15" id="U64-r4-Thl"/>
+                        <constraint firstItem="eXR-32-BOn" firstAttribute="leading" secondItem="jak-CK-gxn" secondAttribute="trailing" constant="23" id="Uoz-2k-7kd"/>
+                        <constraint firstItem="QPv-zE-GFY" firstAttribute="bottom" secondItem="jak-CK-gxn" secondAttribute="bottom" constant="2" id="XnN-OG-n0G"/>
+                        <constraint firstItem="eXR-32-BOn" firstAttribute="centerY" secondItem="H20-Kr-4dL" secondAttribute="centerY" id="YRp-RJ-oRp"/>
+                        <constraint firstItem="jak-CK-gxn" firstAttribute="centerY" secondItem="H20-Kr-4dL" secondAttribute="centerY" id="r7c-oe-dRV"/>
+                        <constraint firstAttribute="trailing" secondItem="eXR-32-BOn" secondAttribute="trailing" constant="10" id="zLW-9i-hqb"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="H20-Kr-4dL" secondAttribute="bottom" constant="49" id="0cE-41-Rmd"/>
+                <constraint firstItem="xae-eD-a3n" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="3wn-sy-1OG"/>
+                <constraint firstAttribute="trailing" secondItem="H20-Kr-4dL" secondAttribute="trailing" id="6cR-F8-sWz"/>
+                <constraint firstAttribute="trailing" secondItem="xae-eD-a3n" secondAttribute="trailing" id="9Ej-PG-CJs"/>
+                <constraint firstItem="7K1-R6-LtL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="9xA-Mz-7xY"/>
+                <constraint firstItem="zOb-xE-1vI" firstAttribute="top" secondItem="xae-eD-a3n" secondAttribute="bottom" id="Cxz-3q-bYd"/>
+                <constraint firstAttribute="bottom" secondItem="zOb-xE-1vI" secondAttribute="bottom" id="GhS-Mf-ATm"/>
+                <constraint firstItem="7K1-R6-LtL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Gj1-eJ-LFD"/>
+                <constraint firstAttribute="trailing" secondItem="7K1-R6-LtL" secondAttribute="trailing" id="V8h-YC-Bx9"/>
+                <constraint firstAttribute="trailing" secondItem="zOb-xE-1vI" secondAttribute="trailing" id="hff-UT-eXZ"/>
+                <constraint firstItem="xae-eD-a3n" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="q5t-As-pkJ"/>
+                <constraint firstItem="zOb-xE-1vI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="tSw-hq-KrQ"/>
+                <constraint firstItem="H20-Kr-4dL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="uF4-Ta-55f"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="avatar_mock_map_user_share_location" width="25" height="25"/>
+        <image name="avatar_no_image" width="50" height="49"/>
+        <image name="bg_user_map" width="99" height="29"/>
+        <image name="flag_italy_map" width="24" height="24"/>
+        <image name="ic_history" width="19" height="19"/>
+        <image name="ic_like_map" width="13" height="12"/>
+        <image name="ic_start_activated" width="11" height="11"/>
+        <image name="ic_start_normal" width="11" height="11"/>
+    </resources>
+</document>

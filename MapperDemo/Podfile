@@ -1,0 +1,11 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '9.0'
+use_frameworks!
+
+target 'Locozap' do
+    pod 'Alamofire', '~> 4.0.1’
+    #pod 'SwiftyJSON', git: 'https://github.com/BaiduHiDeviOS/SwiftyJSON.git', branch: 'swift3'
+    pod 'SwiftyJSON', '~>3.1.1’
+    pod 'Socket.IO-Client-Swift', '~> 8.1.1’
+    pod 'SDWebImage', '~>3.8.2’
+end

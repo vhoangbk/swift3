@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScreenShotMapViewController" customModule="Locozap" customModuleProvider="target">
+            <connections>
+                <outlet property="mMapView" destination="WKf-zl-37w" id="hEk-jV-mfa"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lrX-Hn-MA1">
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.82745098039999998" blue="0.01176470588" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="FZw-gc-9Bm"/>
+                    </constraints>
+                </view>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="WKf-zl-37w"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AU8-0T-St5" userLabel="Tab bar">
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="10Y-zs-41f">
+                            <state key="normal" image="img_back"/>
+                            <connections>
+                                <action selector="pressActionBack:" destination="-1" eventType="touchUpInside" id="sKB-oU-0Rm"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.99607843139999996" green="0.82745098039999998" blue="0.01176470588" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="10Y-zs-41f" firstAttribute="leading" secondItem="AU8-0T-St5" secondAttribute="leading" constant="10" id="0td-9b-9Mc"/>
+                        <constraint firstAttribute="height" constant="44" id="5ww-wN-QNk"/>
+                        <constraint firstItem="10Y-zs-41f" firstAttribute="centerY" secondItem="AU8-0T-St5" secondAttribute="centerY" id="sg8-yk-UD8"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JQJ-sB-HNx">
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="34v-ts-Feh">
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.53333333329999999" green="0.53333333329999999" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="34v-ts-Feh" firstAttribute="leading" secondItem="JQJ-sB-HNx" secondAttribute="leading" constant="20" id="IlA-6q-Cd9"/>
+                        <constraint firstItem="34v-ts-Feh" firstAttribute="centerY" secondItem="JQJ-sB-HNx" secondAttribute="centerY" id="g4w-YI-SbQ"/>
+                        <constraint firstAttribute="height" constant="56" id="kHd-n6-yTC"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yde-3S-Upx">
+                    <state key="normal" backgroundImage="test_icon_share_location"/>
+                    <connections>
+                        <action selector="pressActionShareLocation:" destination="-1" eventType="touchUpInside" id="Z2W-LT-cHK"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="JQJ-sB-HNx" secondAttribute="trailing" id="6qn-bs-GTf"/>
+                <constraint firstItem="lrX-Hn-MA1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="7HO-p9-PCY"/>
+                <constraint firstItem="JQJ-sB-HNx" firstAttribute="top" secondItem="WKf-zl-37w" secondAttribute="bottom" id="9Om-m7-IfE"/>
+                <constraint firstItem="Yde-3S-Upx" firstAttribute="top" secondItem="JQJ-sB-HNx" secondAttribute="top" constant="-20" id="9oV-bP-w8e"/>
+                <constraint firstAttribute="trailing" secondItem="Yde-3S-Upx" secondAttribute="trailing" constant="20" id="Cxk-FT-zKu"/>
+                <constraint firstItem="JQJ-sB-HNx" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="DSp-nq-hxI"/>
+                <constraint firstItem="AU8-0T-St5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="MlU-Be-nWD"/>
+                <constraint firstItem="lrX-Hn-MA1" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="UkG-fN-JGG"/>
+                <constraint firstItem="WKf-zl-37w" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="dAD-kt-TI9"/>
+                <constraint firstAttribute="bottom" secondItem="JQJ-sB-HNx" secondAttribute="bottom" id="gsY-tD-puc"/>
+                <constraint firstItem="AU8-0T-St5" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="nnv-B7-jes"/>
+                <constraint firstItem="WKf-zl-37w" firstAttribute="top" secondItem="AU8-0T-St5" secondAttribute="bottom" id="omG-xj-V7G"/>
+                <constraint firstAttribute="trailing" secondItem="lrX-Hn-MA1" secondAttribute="trailing" id="qfN-dh-NKz"/>
+                <constraint firstAttribute="trailing" secondItem="WKf-zl-37w" secondAttribute="trailing" id="qov-2V-Ekg"/>
+                <constraint firstAttribute="trailing" secondItem="AU8-0T-St5" secondAttribute="trailing" id="u5b-F0-Frg"/>
+            </constraints>
+            <point key="canvasLocation" x="24.5" y="52.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="img_back" width="12" height="20"/>
+        <image name="test_icon_share_location" width="35" height="35"/>
+    </resources>
+</document>

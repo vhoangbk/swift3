@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="hirakakupro-w3.otf">
+            <string>HiraKakuPro-W3</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="PostDialog" customModule="Locozap" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="APg-pt-XCS" userLabel="View back ground">
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jOo-jp-GDj" userLabel="View button">
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1pZ-SN-GUk" userLabel="View 1">
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="acG-S1-Lmm">
+                                    <state key="normal" image="ic_menu_food"/>
+                                    <connections>
+                                        <action selector="pressMenuFood:" destination="iN0-l3-epB" eventType="touchUpInside" id="86e-DT-6Le"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rrd-gT-am2">
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="25" id="s5V-B0-BmW"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="HiraKakuPro-W3" family="Hiragino Kaku Gothic Pro" pointSize="15"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="acG-S1-Lmm" firstAttribute="top" secondItem="1pZ-SN-GUk" secondAttribute="top" constant="10" id="DVA-ju-JwI"/>
+                                <constraint firstItem="Rrd-gT-am2" firstAttribute="top" secondItem="acG-S1-Lmm" secondAttribute="bottom" constant="5" id="TRR-ZR-ryb"/>
+                                <constraint firstItem="acG-S1-Lmm" firstAttribute="centerX" secondItem="1pZ-SN-GUk" secondAttribute="centerX" id="t6T-DI-zUg"/>
+                                <constraint firstItem="Rrd-gT-am2" firstAttribute="centerX" secondItem="acG-S1-Lmm" secondAttribute="centerX" id="zZ5-fi-m7V"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G6i-vd-0XI" userLabel="View 2">
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a7Z-Uv-ENf">
+                                    <state key="normal" image="ic_menu_drink"/>
+                                    <connections>
+                                        <action selector="pressMenuDrik:" destination="iN0-l3-epB" eventType="touchUpInside" id="f5Z-2N-gcY"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tgc-hx-h6F">
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="25" id="JoI-ZL-QuW"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="HiraKakuPro-W3" family="Hiragino Kaku Gothic Pro" pointSize="15"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="a7Z-Uv-ENf" firstAttribute="top" secondItem="G6i-vd-0XI" secondAttribute="top" constant="10" id="bdC-cv-Wnu"/>
+                                <constraint firstItem="a7Z-Uv-ENf" firstAttribute="centerX" secondItem="G6i-vd-0XI" secondAttribute="centerX" id="cjF-gw-Bt7"/>
+                                <constraint firstItem="tgc-hx-h6F" firstAttribute="centerX" secondItem="a7Z-Uv-ENf" secondAttribute="centerX" id="ezt-c6-cf8"/>
+                                <constraint firstItem="tgc-hx-h6F" firstAttribute="top" secondItem="a7Z-Uv-ENf" secondAttribute="bottom" constant="5" id="xeg-Ph-Wod"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fRS-nV-rRZ" userLabel="View 3">
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zAa-mb-XFc">
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="25" id="mzz-YC-9xd"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="HiraKakuPro-W3" family="Hiragino Kaku Gothic Pro" pointSize="15"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LOH-9l-mok">
+                                    <state key="normal" image="ic_menu_play"/>
+                                    <connections>
+                                        <action selector="pressMenuPlay:" destination="iN0-l3-epB" eventType="touchUpInside" id="Bff-Zm-NST"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="zAa-mb-XFc" firstAttribute="centerX" secondItem="LOH-9l-mok" secondAttribute="centerX" id="NLC-u6-8og"/>
+                                <constraint firstAttribute="height" constant="100" id="bJW-yp-eaA"/>
+                                <constraint firstItem="zAa-mb-XFc" firstAttribute="top" secondItem="LOH-9l-mok" secondAttribute="bottom" constant="5" id="lFI-9e-Ks8"/>
+                                <constraint firstItem="LOH-9l-mok" firstAttribute="top" secondItem="fRS-nV-rRZ" secondAttribute="top" constant="10" id="tsc-D6-1fk"/>
+                                <constraint firstItem="LOH-9l-mok" firstAttribute="centerX" secondItem="fRS-nV-rRZ" secondAttribute="centerX" id="z9o-CI-w1t"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Zh-h1-Alb" userLabel="View 4">
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DMa-qC-t16">
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="25" id="60U-7A-1Rf"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="HiraKakuPro-W3" family="Hiragino Kaku Gothic Pro" pointSize="15"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RAs-q3-voJ">
+                                    <state key="normal" image="ic_menu_help"/>
+                                    <connections>
+                                        <action selector="pressMenuHelp:" destination="iN0-l3-epB" eventType="touchUpInside" id="7rX-t8-usH"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="RAs-q3-voJ" firstAttribute="top" secondItem="5Zh-h1-Alb" secondAttribute="top" constant="10" id="1Q4-FE-Pkc"/>
+                                <constraint firstItem="RAs-q3-voJ" firstAttribute="centerX" secondItem="5Zh-h1-Alb" secondAttribute="centerX" id="b1U-Ie-OPh"/>
+                                <constraint firstItem="DMa-qC-t16" firstAttribute="centerX" secondItem="RAs-q3-voJ" secondAttribute="centerX" id="i72-zs-qVx"/>
+                                <constraint firstItem="DMa-qC-t16" firstAttribute="top" secondItem="RAs-q3-voJ" secondAttribute="bottom" constant="5" id="xb1-Od-YIo"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="5Zh-h1-Alb" firstAttribute="leading" secondItem="fRS-nV-rRZ" secondAttribute="trailing" id="4r5-Yf-zNe"/>
+                        <constraint firstItem="fRS-nV-rRZ" firstAttribute="leading" secondItem="jOo-jp-GDj" secondAttribute="leading" id="E2t-rT-V2g"/>
+                        <constraint firstItem="G6i-vd-0XI" firstAttribute="height" secondItem="1pZ-SN-GUk" secondAttribute="height" id="GGd-fE-YWl"/>
+                        <constraint firstAttribute="bottom" secondItem="5Zh-h1-Alb" secondAttribute="bottom" id="I3O-YY-QRg"/>
+                        <constraint firstAttribute="height" constant="200" id="TMB-Fn-eT2"/>
+                        <constraint firstItem="1pZ-SN-GUk" firstAttribute="leading" secondItem="jOo-jp-GDj" secondAttribute="leading" id="Yq8-fO-XzQ"/>
+                        <constraint firstItem="1pZ-SN-GUk" firstAttribute="top" secondItem="jOo-jp-GDj" secondAttribute="top" id="apB-95-FPI"/>
+                        <constraint firstItem="1pZ-SN-GUk" firstAttribute="width" secondItem="jOo-jp-GDj" secondAttribute="width" multiplier="1:2" id="bxW-zy-pgO"/>
+                        <constraint firstItem="1pZ-SN-GUk" firstAttribute="height" secondItem="jOo-jp-GDj" secondAttribute="height" multiplier="1:2" id="eYk-ii-pPz"/>
+                        <constraint firstItem="G6i-vd-0XI" firstAttribute="leading" secondItem="1pZ-SN-GUk" secondAttribute="trailing" id="ent-MJ-Ing"/>
+                        <constraint firstItem="fRS-nV-rRZ" firstAttribute="width" secondItem="1pZ-SN-GUk" secondAttribute="width" id="kqy-Eg-a1D"/>
+                        <constraint firstItem="G6i-vd-0XI" firstAttribute="top" secondItem="jOo-jp-GDj" secondAttribute="top" id="m5r-cm-F3n"/>
+                        <constraint firstAttribute="trailing" secondItem="5Zh-h1-Alb" secondAttribute="trailing" id="nIl-En-5ek"/>
+                        <constraint firstAttribute="trailing" secondItem="G6i-vd-0XI" secondAttribute="trailing" id="ycx-cE-cHH"/>
+                        <constraint firstItem="fRS-nV-rRZ" firstAttribute="top" secondItem="1pZ-SN-GUk" secondAttribute="bottom" id="yla-2E-jmI"/>
+                        <constraint firstItem="5Zh-h1-Alb" firstAttribute="top" secondItem="G6i-vd-0XI" secondAttribute="bottom" id="yyi-gb-00w"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MMH-jB-Of5">
+                    <state key="normal" image="post_dialog_close"/>
+                    <connections>
+                        <action selector="pressClosePost:" destination="iN0-l3-epB" eventType="touchUpInside" id="pyj-OC-VV3"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="jOo-jp-GDj" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="0ph-mT-7Yg"/>
+                <constraint firstAttribute="trailing" secondItem="APg-pt-XCS" secondAttribute="trailing" id="4UT-s9-r3u"/>
+                <constraint firstItem="APg-pt-XCS" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="5SE-MZ-TdZ"/>
+                <constraint firstItem="MMH-jB-Of5" firstAttribute="top" secondItem="jOo-jp-GDj" secondAttribute="bottom" constant="50" id="DlM-Cf-tEx"/>
+                <constraint firstAttribute="bottom" secondItem="APg-pt-XCS" secondAttribute="bottom" id="L6q-Gj-mvD"/>
+                <constraint firstItem="MMH-jB-Of5" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="OHc-0Y-9hd"/>
+                <constraint firstAttribute="bottom" secondItem="MMH-jB-Of5" secondAttribute="bottom" constant="6" id="S3z-ZC-3eE"/>
+                <constraint firstItem="APg-pt-XCS" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="VFv-jy-bB6"/>
+                <constraint firstAttribute="trailing" secondItem="jOo-jp-GDj" secondAttribute="trailing" constant="10" id="mRr-qI-vV8"/>
+            </constraints>
+            <connections>
+                <outlet property="lbMenuDrink" destination="tgc-hx-h6F" id="tgS-TP-1u1"/>
+                <outlet property="lbMenuFood" destination="Rrd-gT-am2" id="jIe-Xr-6kR"/>
+                <outlet property="lbMenuHelp" destination="DMa-qC-t16" id="oMo-9E-KdX"/>
+                <outlet property="lbMenuPlay" destination="zAa-mb-XFc" id="96k-qR-26F"/>
+                <outlet property="viewDrink" destination="G6i-vd-0XI" id="p1v-9C-Mgr"/>
+                <outlet property="viewFood" destination="1pZ-SN-GUk" id="esw-kO-iVu"/>
+                <outlet property="viewHelp" destination="5Zh-h1-Alb" id="G6K-cS-v8R"/>
+                <outlet property="viewPlay" destination="fRS-nV-rRZ" id="Au9-HM-bGz"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_menu_drink" width="50" height="54"/>
+        <image name="ic_menu_food" width="50" height="54"/>
+        <image name="ic_menu_help" width="50" height="54"/>
+        <image name="ic_menu_play" width="50" height="54"/>
+        <image name="post_dialog_close" width="32" height="34"/>
+    </resources>
+</document>

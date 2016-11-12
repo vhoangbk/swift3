@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="hirakakupro-w3.otf">
+            <string>HiraKakuPro-W3</string>
+        </array>
+        <array key="hirakakupro-w6.otf">
+            <string>HiraKakuPro-W6</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JSQMessagesViewController">
+            <connections>
+                <outlet property="collectionView" destination="l9u-2b-4LK" id="bLP-6g-CkO"/>
+                <outlet property="heightContrainViewHeaderContent" destination="Wi8-YQ-l0e" id="sKo-yW-iM1"/>
+                <outlet property="imgHeaderArrow" destination="nWZ-tI-cav" id="3iD-sa-9hJ"/>
+                <outlet property="inputToolbar" destination="BoD-Az-3DM" id="w74-g9-1qA"/>
+                <outlet property="topContrainHeaderContent" destination="3bc-tc-EM7" id="D7p-gU-9dc"/>
+                <outlet property="view" destination="mUa-cS-ru4" id="nki-T1-RTI"/>
+                <outlet property="viewExpand" destination="CZd-HJ-xOX" id="d6O-kC-zA7"/>
+                <outlet property="viewHeaderContent" destination="rwu-kD-bO3" id="Qzb-Li-xaO"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="mUa-cS-ru4">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <collectionView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="l9u-2b-4LK" customClass="JSQMessagesCollectionView">
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <collectionViewLayout key="collectionViewLayout" id="dZl-7C-LHR" customClass="JSQMessagesCollectionViewFlowLayout"/>
+                    <cells/>
+                </collectionView>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="BoD-Az-3DM" customClass="JSQMessagesInputToolbar">
+                    <items/>
+                </toolbar>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rwu-kD-bO3">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_food" translatesAutoresizingMaskIntoConstraints="NO" id="2Sj-zM-rwF"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Motorcycle rent in Tokyo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ide-kO-RU4">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="bbH-bc-gB1"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HiraKakuPro-W6" family="Hiragino Kaku Gothic Pro" pointSize="18"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p8E-73-cZK">
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_location" translatesAutoresizingMaskIntoConstraints="NO" id="f3Y-oy-8xU"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shinjyuku1-2-3, Tokyo, Japan" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nCF-Sc-Am8">
+                                    <fontDescription key="fontDescription" name="HiraKakuPro-W3" family="Hiragino Kaku Gothic Pro" pointSize="12"/>
+                                    <color key="textColor" red="0.93725490199999995" green="0.82745098039999998" blue="0.01176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="25" id="3I6-cG-87K"/>
+                                <constraint firstItem="f3Y-oy-8xU" firstAttribute="centerY" secondItem="p8E-73-cZK" secondAttribute="centerY" id="9Kg-y7-ep9"/>
+                                <constraint firstAttribute="trailing" secondItem="nCF-Sc-Am8" secondAttribute="trailing" id="NeN-6t-0NP"/>
+                                <constraint firstItem="f3Y-oy-8xU" firstAttribute="centerX" secondItem="p8E-73-cZK" secondAttribute="centerX" constant="-100" id="YZc-0c-vFo"/>
+                                <constraint firstItem="nCF-Sc-Am8" firstAttribute="centerY" secondItem="p8E-73-cZK" secondAttribute="centerY" id="kDq-yT-Jbe"/>
+                                <constraint firstItem="nCF-Sc-Am8" firstAttribute="leading" secondItem="f3Y-oy-8xU" secondAttribute="trailing" constant="10" id="pDt-8N-JLw"/>
+                            </constraints>
+                        </view>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0gp-RM-0z3">
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="100" id="wNK-Dm-PmF"/>
+                            </constraints>
+                            <string key="text">Looking for some motorcycle rental shops in Tokyo. I do know that rental 819 does that, But I heard from my pal that 819's rate is kinda expensive. So, I tried to look for affordable rental shops but I still can't find it. Since I could speak Japanese (Only SPEAKING) rental shops that are not able to speak English is also fine</string>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" name="HiraKakuPro-W6" family="Hiragino Kaku Gothic Pro" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                        <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5bq-a0-8p9">
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar_no_image" translatesAutoresizingMaskIntoConstraints="NO" id="9P4-Y0-lpe"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mockup Tom" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lgT-hp-RQn">
+                                    <fontDescription key="fontDescription" name="HiraKakuPro-W6" family="Hiragino Kaku Gothic Pro" pointSize="17"/>
+                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="lgT-hp-RQn" firstAttribute="centerY" secondItem="5bq-a0-8p9" secondAttribute="centerY" id="Dhv-EQ-Nxf"/>
+                                <constraint firstAttribute="trailing" secondItem="lgT-hp-RQn" secondAttribute="trailing" id="Hca-eN-vUw"/>
+                                <constraint firstItem="9P4-Y0-lpe" firstAttribute="centerX" secondItem="5bq-a0-8p9" secondAttribute="centerX" constant="-50" id="Ids-b1-cFq"/>
+                                <constraint firstItem="9P4-Y0-lpe" firstAttribute="centerY" secondItem="5bq-a0-8p9" secondAttribute="centerY" id="McV-v2-qaa"/>
+                                <constraint firstItem="lgT-hp-RQn" firstAttribute="leading" secondItem="9P4-Y0-lpe" secondAttribute="trailing" constant="10" id="oKg-ib-R9m"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cx3-GY-s6P">
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="MAI-hv-lj1"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="2Sj-zM-rwF" firstAttribute="top" secondItem="rwu-kD-bO3" secondAttribute="top" constant="5" id="0a9-37-RE5"/>
+                        <constraint firstItem="p8E-73-cZK" firstAttribute="leading" secondItem="rwu-kD-bO3" secondAttribute="leading" id="2xT-MC-Ots"/>
+                        <constraint firstAttribute="trailing" secondItem="5bq-a0-8p9" secondAttribute="trailing" id="3WW-2Y-yRx"/>
+                        <constraint firstItem="2Sj-zM-rwF" firstAttribute="centerX" secondItem="rwu-kD-bO3" secondAttribute="centerX" id="3f8-nb-Fcx"/>
+                        <constraint firstItem="Cx3-GY-s6P" firstAttribute="leading" secondItem="rwu-kD-bO3" secondAttribute="leading" id="5Nx-lq-9zW"/>
+                        <constraint firstAttribute="bottom" secondItem="Cx3-GY-s6P" secondAttribute="bottom" id="J3B-8u-JxP"/>
+                        <constraint firstItem="5bq-a0-8p9" firstAttribute="top" secondItem="0gp-RM-0z3" secondAttribute="bottom" id="JkA-uC-1hf"/>
+                        <constraint firstItem="5bq-a0-8p9" firstAttribute="leading" secondItem="rwu-kD-bO3" secondAttribute="leading" id="NH7-y7-BFP"/>
+                        <constraint firstAttribute="height" constant="270" id="Wi8-YQ-l0e"/>
+                        <constraint firstItem="p8E-73-cZK" firstAttribute="top" secondItem="Ide-kO-RU4" secondAttribute="bottom" id="Yjn-qG-2pe"/>
+                        <constraint firstAttribute="trailing" secondItem="p8E-73-cZK" secondAttribute="trailing" id="a40-XI-ZxU"/>
+                        <constraint firstItem="0gp-RM-0z3" firstAttribute="leading" secondItem="rwu-kD-bO3" secondAttribute="leading" id="am8-Yx-cJt"/>
+                        <constraint firstAttribute="trailing" secondItem="Cx3-GY-s6P" secondAttribute="trailing" id="cSs-3H-VhC"/>
+                        <constraint firstItem="0gp-RM-0z3" firstAttribute="top" secondItem="p8E-73-cZK" secondAttribute="bottom" id="dgv-vs-d2g"/>
+                        <constraint firstItem="Ide-kO-RU4" firstAttribute="top" secondItem="2Sj-zM-rwF" secondAttribute="bottom" constant="5" id="fpZ-4k-lgB"/>
+                        <constraint firstAttribute="trailing" secondItem="0gp-RM-0z3" secondAttribute="trailing" id="ftQ-cy-GW1"/>
+                        <constraint firstItem="Cx3-GY-s6P" firstAttribute="top" secondItem="5bq-a0-8p9" secondAttribute="bottom" id="gn5-BG-HOx"/>
+                        <constraint firstAttribute="trailing" secondItem="Ide-kO-RU4" secondAttribute="trailing" id="s9G-tK-GBj"/>
+                        <constraint firstItem="Ide-kO-RU4" firstAttribute="leading" secondItem="rwu-kD-bO3" secondAttribute="leading" id="vqc-FT-2Rg"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CZd-HJ-xOX">
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Motorcycle rent in Tokyo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kgX-9H-pYj">
+                            <fontDescription key="fontDescription" name="HiraKakuPro-W6" family="Hiragino Kaku Gothic Pro" pointSize="17"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_arrow_down" translatesAutoresizingMaskIntoConstraints="NO" id="nWZ-tI-cav"/>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lvk-rr-zlj">
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="pRa-Db-wlf"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lhq-Qu-Dop">
+                            <connections>
+                                <action selector="pressExpandOrCollapse:" destination="-1" eventType="touchUpInside" id="sWq-Fi-tmx"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="lvk-rr-zlj" secondAttribute="bottom" id="6Lc-53-Ojn"/>
+                        <constraint firstItem="Lhq-Qu-Dop" firstAttribute="top" secondItem="CZd-HJ-xOX" secondAttribute="top" id="6wF-2G-xaD"/>
+                        <constraint firstItem="kgX-9H-pYj" firstAttribute="leading" secondItem="CZd-HJ-xOX" secondAttribute="leading" id="7Zo-Z8-UF7"/>
+                        <constraint firstAttribute="trailing" secondItem="nWZ-tI-cav" secondAttribute="trailing" constant="10" id="CfA-F5-kPV"/>
+                        <constraint firstAttribute="bottom" secondItem="kgX-9H-pYj" secondAttribute="bottom" id="EK8-63-3wH"/>
+                        <constraint firstItem="nWZ-tI-cav" firstAttribute="centerY" secondItem="CZd-HJ-xOX" secondAttribute="centerY" id="H4u-EA-NHp"/>
+                        <constraint firstItem="kgX-9H-pYj" firstAttribute="top" secondItem="CZd-HJ-xOX" secondAttribute="top" id="IFT-Z8-SUL"/>
+                        <constraint firstAttribute="trailing" secondItem="Lhq-Qu-Dop" secondAttribute="trailing" id="Jbp-m7-LTj"/>
+                        <constraint firstItem="Lhq-Qu-Dop" firstAttribute="leading" secondItem="CZd-HJ-xOX" secondAttribute="leading" id="LQX-sE-ITz"/>
+                        <constraint firstAttribute="trailing" secondItem="kgX-9H-pYj" secondAttribute="trailing" id="QIr-Lk-kEa"/>
+                        <constraint firstAttribute="height" constant="44" id="Qj3-Eh-LkC"/>
+                        <constraint firstAttribute="bottom" secondItem="Lhq-Qu-Dop" secondAttribute="bottom" id="WwT-Xl-nNr"/>
+                        <constraint firstAttribute="trailing" secondItem="lvk-rr-zlj" secondAttribute="trailing" id="pWq-CI-NnP"/>
+                        <constraint firstItem="lvk-rr-zlj" firstAttribute="leading" secondItem="CZd-HJ-xOX" secondAttribute="leading" id="pkr-KI-otc"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="rwu-kD-bO3" firstAttribute="top" secondItem="mUa-cS-ru4" secondAttribute="top" constant="108" id="3bc-tc-EM7"/>
+                <constraint firstAttribute="trailing" secondItem="BoD-Az-3DM" secondAttribute="trailing" id="7xc-Ha-asg"/>
+                <constraint firstItem="l9u-2b-4LK" firstAttribute="leading" secondItem="mUa-cS-ru4" secondAttribute="leading" id="MmF-oh-Y75"/>
+                <constraint firstAttribute="trailing" secondItem="l9u-2b-4LK" secondAttribute="trailing" id="O9u-TA-A0e"/>
+                <constraint firstAttribute="bottom" secondItem="l9u-2b-4LK" secondAttribute="bottom" id="Re7-WW-UmS"/>
+                <constraint firstAttribute="trailing" secondItem="rwu-kD-bO3" secondAttribute="trailing" id="Ryo-7P-hb0"/>
+                <constraint firstItem="CZd-HJ-xOX" firstAttribute="top" secondItem="mUa-cS-ru4" secondAttribute="top" constant="64" id="Unz-Q8-Rk3"/>
+                <constraint firstAttribute="trailing" secondItem="CZd-HJ-xOX" secondAttribute="trailing" id="ZQu-YL-hUB"/>
+                <constraint firstItem="l9u-2b-4LK" firstAttribute="top" secondItem="mUa-cS-ru4" secondAttribute="top" constant="64" id="dCQ-DM-Wdj"/>
+                <constraint firstItem="CZd-HJ-xOX" firstAttribute="leading" secondItem="mUa-cS-ru4" secondAttribute="leading" id="gmk-I8-BLY"/>
+                <constraint firstAttribute="bottom" secondItem="BoD-Az-3DM" secondAttribute="bottom" id="rHs-6q-NX4"/>
+                <constraint firstItem="BoD-Az-3DM" firstAttribute="leading" secondItem="mUa-cS-ru4" secondAttribute="leading" id="ts7-8f-0lH"/>
+                <constraint firstItem="rwu-kD-bO3" firstAttribute="leading" secondItem="mUa-cS-ru4" secondAttribute="leading" id="w3D-V0-LzA"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="avatar_no_image" width="50" height="49"/>
+        <image name="ic_food" width="50" height="54"/>
+        <image name="ic_location" width="11" height="15"/>
+        <image name="img_arrow_down" width="20" height="12"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

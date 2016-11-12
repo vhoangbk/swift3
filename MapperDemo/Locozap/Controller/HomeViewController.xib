@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="hirakakupro-w3.otf">
+            <string>HiraKakuPro-W3</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="Locozap" customModuleProvider="target">
+            <connections>
+                <outlet property="mBtnAllPost" destination="n6J-RT-wvw" id="sGN-vw-2Q7"/>
+                <outlet property="mBtnPostYourReply" destination="mm2-if-vlw" id="hhH-zW-sCJ"/>
+                <outlet property="mTblPost" destination="FXK-fk-uPp" id="jq6-UD-Tcp"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aAY-j1-bG7">
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.82745098039999998" blue="0.01176470588" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="d89-01-V6X"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vIq-Sh-vk8" userLabel="tool bar">
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_logo_home" translatesAutoresizingMaskIntoConstraints="NO" id="ckz-BD-azv"/>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_history" translatesAutoresizingMaskIntoConstraints="NO" id="OR2-B0-uT5"/>
+                    </subviews>
+                    <color key="backgroundColor" red="0.99607843139999996" green="0.82745098039999998" blue="0.01176470588" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="OR2-B0-uT5" firstAttribute="centerY" secondItem="vIq-Sh-vk8" secondAttribute="centerY" id="KYk-sG-QZU"/>
+                        <constraint firstAttribute="height" constant="44" id="XBR-3X-Z01"/>
+                        <constraint firstItem="ckz-BD-azv" firstAttribute="centerX" secondItem="vIq-Sh-vk8" secondAttribute="centerX" id="lYY-RD-MbC"/>
+                        <constraint firstAttribute="trailing" secondItem="OR2-B0-uT5" secondAttribute="trailing" constant="10" id="rtz-93-Xxf"/>
+                        <constraint firstItem="ckz-BD-azv" firstAttribute="centerY" secondItem="vIq-Sh-vk8" secondAttribute="centerY" id="uRc-UV-Usq"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tqN-dr-Zkf" userLabel="tab button ">
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n6J-RT-wvw">
+                            <fontDescription key="fontDescription" name="HiraKakuPro-W3" family="Hiragino Kaku Gothic Pro" pointSize="14"/>
+                            <state key="normal" title="All posts" backgroundImage="bg_btn_rounded_rectangle_home">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="pressActionAllPost:" destination="-1" eventType="touchUpInside" id="EGu-51-DJs"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mm2-if-vlw">
+                            <fontDescription key="fontDescription" name="HiraKakuPro-W3" family="Hiragino Kaku Gothic Pro" pointSize="14"/>
+                            <state key="normal" title="Post you reply">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="pressActionPostYouReply:" destination="-1" eventType="touchUpInside" id="CWq-An-9ge"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.99607843139999996" green="0.82745098039999998" blue="0.01176470588" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="35" id="1o0-we-hYz"/>
+                        <constraint firstItem="mm2-if-vlw" firstAttribute="height" secondItem="n6J-RT-wvw" secondAttribute="height" id="7J9-wh-kE0"/>
+                        <constraint firstItem="n6J-RT-wvw" firstAttribute="centerY" secondItem="tqN-dr-Zkf" secondAttribute="centerY" id="8df-XV-VWc"/>
+                        <constraint firstItem="mm2-if-vlw" firstAttribute="centerY" secondItem="tqN-dr-Zkf" secondAttribute="centerY" id="PFo-wo-Zjp"/>
+                        <constraint firstAttribute="trailing" secondItem="mm2-if-vlw" secondAttribute="trailing" constant="31" id="R9z-An-dTh"/>
+                        <constraint firstItem="mm2-if-vlw" firstAttribute="width" secondItem="n6J-RT-wvw" secondAttribute="width" id="arp-63-UHl"/>
+                        <constraint firstItem="n6J-RT-wvw" firstAttribute="leading" secondItem="tqN-dr-Zkf" secondAttribute="leading" constant="31" id="uEq-Lm-vCS"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FXK-fk-uPp">
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="vIq-Sh-vk8" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="7sx-cP-pz0"/>
+                <constraint firstItem="FXK-fk-uPp" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="AES-sf-FAR"/>
+                <constraint firstItem="tqN-dr-Zkf" firstAttribute="top" secondItem="vIq-Sh-vk8" secondAttribute="bottom" id="K4t-ma-EfR"/>
+                <constraint firstItem="FXK-fk-uPp" firstAttribute="top" secondItem="tqN-dr-Zkf" secondAttribute="bottom" constant="10" id="ToV-fi-N6O"/>
+                <constraint firstAttribute="trailing" secondItem="tqN-dr-Zkf" secondAttribute="trailing" id="UJB-6P-yfe"/>
+                <constraint firstAttribute="trailing" secondItem="FXK-fk-uPp" secondAttribute="trailing" constant="10" id="Vaf-PP-Inz"/>
+                <constraint firstAttribute="trailing" secondItem="vIq-Sh-vk8" secondAttribute="trailing" id="Zhy-0c-bhL"/>
+                <constraint firstItem="aAY-j1-bG7" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Zme-tj-W20"/>
+                <constraint firstAttribute="bottom" secondItem="FXK-fk-uPp" secondAttribute="bottom" constant="50" id="aK5-cP-nSs"/>
+                <constraint firstItem="vIq-Sh-vk8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="stB-A0-hfj"/>
+                <constraint firstAttribute="trailing" secondItem="aAY-j1-bG7" secondAttribute="trailing" id="uc6-ad-Gq1"/>
+                <constraint firstItem="aAY-j1-bG7" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="vN7-Xb-bVP"/>
+                <constraint firstItem="tqN-dr-Zkf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="wkV-BA-eMQ"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg_btn_rounded_rectangle_home" width="107" height="23"/>
+        <image name="ic_history" width="19" height="19"/>
+        <image name="ic_logo_home" width="106" height="19"/>
+    </resources>
+</document>

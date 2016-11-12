@@ -1,0 +1,81 @@
+/* 
+  Localizable.strings
+  Locozap
+
+  Created by MAC on 10/12/16.
+  Copyright © 2016 paraline. All rights reserved.
+*/
+
+// comon
+"btn_ok" = "Ok";
+
+//login
+"login" = "ログイン";
+"account_facebook" = "Facebookで進む";
+"account_creation" = "アカウント作成";
+"terms_of_use_and_rivacy_policy" = "<font color='white'>登録することで、<u>利用規約</u>>および<u>プライバシーポリシー</u>>に同意するものとします。</font>";
+
+//login and register
+"enter_user_name" = "メールアドレスを入力";
+"enter_password" = "パスワードを入力";
+"enter_re_password" = "パスワード（確認）";
+"btn_login" = "ログイン";
+"btn_register" = "登録";
+"btn_register_account" = "アカウントを作成";
+"title_login" = "ログイン";
+"title_register" = "新規登録";
+"user_name_empty" = "メールアドレスが入力してください。";
+"password_empty" = "パスワードが入力してください。";
+"location_empty" = "位置情報を取得している。少々お待ちください。";
+"password_incorrect" = "パスワード(確認)はパスワードと同じように入力してください。";
+"create_account_success" = "Create account success";
+// End Login
+
+//message error api
+"message_error_network" = "No connection to the Internet.";
+"error_code_common" = "An error has occurred. Please try again you wait for a while.";
+
+
+// HomeFragment
+"all_posts" = "全ての投稿";
+"reply_posts" = "返信した投稿";
+"text_time_by_day" = "昨日";
+
+//chat group
+"title_posting" = "投稿";
+"cancel" = "キャンセル";
+"send" = "送信";
+
+//chat
+"choose_camera" = "写真を撮影";
+"choose_gallery" = "カメラロールから選択";
+"choose_share_location" = "位置情報を送信";
+"enter_message" = "メッセージを入力";
+
+// activity location account info
+"button_chat" = "チャット";
+"button_friend_request" = "フレンド申請";
+"title_left_tool_bar" = "東京";
+"title_center_tool_bar" = "東京渋谷区";
+"name_japan_location_account_info" = "日本語";
+"name_english_location_account_info" = "英語";
+"name_portuguese_location_account_info" = "ポルトガル語";
+
+// post menu view
+"post_food"= "ごはんに行こう";
+"post_drink"= "飲みに行こう";
+"post_play"= "遊びに行こう";
+"post_help"= "助けてほしい";
+
+// activity post
+"activity_post_menu_left" = "キャンセル";
+"activity_post_menu_right" = "次へ";
+"activity_post_menu_center" = "教えてほしい";
+
+"activity_post_during_loading" = "掲載期間";
+"activity_post_today" = "今日";
+"activity_post_tomorrow" = "明日";
+"activity_post_date_specified" = "日付指定";
+
+"activity_post_enter_title" = "タイトルを入力";
+"activity_post_contents" = "内容本文（2000文字まで）";

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="hirakakupro-w3.otf">
+            <string>HiraKakuPro-W3</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="CellHomeFragment" customModule="Locozap" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="325" height="105"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="325" height="104"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_food" translatesAutoresizingMaskIntoConstraints="NO" id="H6J-e0-jlD">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="55" id="Nic-Dk-b17"/>
+                            <constraint firstAttribute="width" constant="50" id="Te3-dp-a3h"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ah-Hg-sah">
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Label Label Label Label Label Label Label Label Label Label Label Label Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="efA-0P-BC5">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="33" id="pOp-xA-QxW"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                        <color key="textColor" red="0.53333333333333333" green="0.53333333333333333" blue="0.53333333333333333" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_avatar_home" translatesAutoresizingMaskIntoConstraints="NO" id="adQ-G1-364"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_logo_italia" translatesAutoresizingMaskIntoConstraints="NO" id="Nm1-R0-U87"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yesterday" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o4c-YY-5QR">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="6qd-aa-peb"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HiraKakuPro-W3" family="Hiragino Kaku Gothic Pro" pointSize="12"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mock tom" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TB5-9u-p2k">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="95" id="QyS-o6-g0J"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_message_home" translatesAutoresizingMaskIntoConstraints="NO" id="x72-7y-qd7"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rhv-yT-7KA">
+                        <fontDescription key="fontDescription" name="HiraKakuPro-W3" family="Hiragino Kaku Gothic Pro" pointSize="12"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Rhv-yT-7KA" firstAttribute="leading" secondItem="x72-7y-qd7" secondAttribute="trailing" id="4qm-Kh-noQ"/>
+                    <constraint firstAttribute="trailing" secondItem="5Ah-Hg-sah" secondAttribute="trailing" id="6rx-73-p7q"/>
+                    <constraint firstItem="adQ-G1-364" firstAttribute="top" secondItem="efA-0P-BC5" secondAttribute="bottom" constant="7" id="7dh-MC-j9E"/>
+                    <constraint firstItem="TB5-9u-p2k" firstAttribute="leading" secondItem="adQ-G1-364" secondAttribute="trailing" constant="10" id="DE9-7V-Sm6"/>
+                    <constraint firstItem="x72-7y-qd7" firstAttribute="centerY" secondItem="TB5-9u-p2k" secondAttribute="centerY" id="F33-Bp-EOy"/>
+                    <constraint firstItem="efA-0P-BC5" firstAttribute="width" secondItem="5Ah-Hg-sah" secondAttribute="width" id="KEm-vk-jgV"/>
+                    <constraint firstItem="adQ-G1-364" firstAttribute="leading" secondItem="efA-0P-BC5" secondAttribute="leading" id="LQx-Vn-ndS"/>
+                    <constraint firstItem="H6J-e0-jlD" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Owq-Pm-mhW"/>
+                    <constraint firstItem="TB5-9u-p2k" firstAttribute="centerY" secondItem="adQ-G1-364" secondAttribute="centerY" id="Sfk-SY-7QN"/>
+                    <constraint firstItem="efA-0P-BC5" firstAttribute="top" secondItem="5Ah-Hg-sah" secondAttribute="bottom" id="byr-fd-u2h"/>
+                    <constraint firstItem="H6J-e0-jlD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="ecB-nA-xnB"/>
+                    <constraint firstItem="o4c-YY-5QR" firstAttribute="centerY" secondItem="adQ-G1-364" secondAttribute="centerY" id="fQ0-V2-gDO"/>
+                    <constraint firstItem="Nm1-R0-U87" firstAttribute="leading" secondItem="adQ-G1-364" secondAttribute="leading" constant="15" id="gid-rc-ihU"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="o4c-YY-5QR" secondAttribute="trailing" id="j1J-1r-2kf"/>
+                    <constraint firstItem="5Ah-Hg-sah" firstAttribute="leading" secondItem="H6J-e0-jlD" secondAttribute="trailing" constant="10" id="jK7-K4-Ah0"/>
+                    <constraint firstItem="5Ah-Hg-sah" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="kRi-Lm-Efe"/>
+                    <constraint firstItem="x72-7y-qd7" firstAttribute="leading" secondItem="TB5-9u-p2k" secondAttribute="trailing" constant="5" id="lDX-NZ-O5k"/>
+                    <constraint firstItem="Rhv-yT-7KA" firstAttribute="centerY" secondItem="x72-7y-qd7" secondAttribute="centerY" id="lzy-iH-Xpi"/>
+                    <constraint firstItem="Nm1-R0-U87" firstAttribute="top" secondItem="efA-0P-BC5" secondAttribute="bottom" constant="19" id="nDb-8w-IZ5"/>
+                    <constraint firstItem="efA-0P-BC5" firstAttribute="leading" secondItem="5Ah-Hg-sah" secondAttribute="leading" id="pnX-3x-fxV"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cellAvatarUser" destination="adQ-G1-364" id="FE8-mX-45T"/>
+                <outlet property="cellContent" destination="efA-0P-BC5" id="o9H-GC-fgJ"/>
+                <outlet property="cellDateTime" destination="o4c-YY-5QR" id="kG2-Vl-Uno"/>
+                <outlet property="cellFlagUser" destination="Nm1-R0-U87" id="xoX-Rj-piY"/>
+                <outlet property="cellIcon" destination="H6J-e0-jlD" id="ZvO-yN-CaO"/>
+                <outlet property="cellNumberMessage" destination="Rhv-yT-7KA" id="v9W-7u-iis"/>
+                <outlet property="cellTitle" destination="5Ah-Hg-sah" id="ILM-Yc-6N8"/>
+                <outlet property="cellUserName" destination="TB5-9u-p2k" id="H49-f2-t6c"/>
+            </connections>
+            <point key="canvasLocation" x="24.5" y="51.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_avatar_home" width="26" height="26"/>
+        <image name="ic_food" width="50" height="54"/>
+        <image name="ic_logo_italia" width="14" height="14"/>
+        <image name="ic_message_home" width="13" height="12"/>
+    </resources>
+</document>

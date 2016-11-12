@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="hirakakupro-w3.otf">
+            <string>HiraKakuPro-W3</string>
+        </array>
+        <array key="hirakakupro-w6.otf">
+            <string>HiraKakuPro-W6</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginAccountViewController" customModule="Locozap" customModuleProvider="target">
+            <connections>
+                <outlet property="mBtnLogin" destination="7Kp-Kg-Hzx" id="fGU-dO-ruX"/>
+                <outlet property="mBtnRegister" destination="Lfr-3I-zWL" id="liM-7D-Hax"/>
+                <outlet property="mEdtPassword" destination="qfS-lp-4ZG" id="irP-CF-aR8"/>
+                <outlet property="mEdtUserName" destination="4Sc-FK-HUC" id="j6o-zE-mFv"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hwt-Kj-tyE">
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lfr-3I-zWL" customClass="LocalizedButton" customModule="Locozap" customModuleProvider="target">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="Zir-fP-Pc0"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HiraKakuPro-W3" family="Hiragino Kaku Gothic Pro" pointSize="17"/>
+                            <state key="normal" title="Register new account">
+                                <color key="titleColor" red="0.99607843139999996" green="0.82745098039999998" blue="0.01176470588" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Kp-Kg-Hzx" customClass="LocalizedButton" customModule="Locozap" customModuleProvider="target">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="2hK-Xq-rL3"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HiraKakuPro-W6" family="Hiragino Kaku Gothic Pro" pointSize="17"/>
+                            <state key="normal" title="Login" backgroundImage="login_btn_fb">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="pressActionLogin:" destination="-1" eventType="touchUpInside" id="Q5p-Bo-S4S"/>
+                            </connections>
+                        </button>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qfS-lp-4ZG">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="kv7-Jt-gxl"/>
+                            </constraints>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" name="HiraKakuPro-W3" family="Hiragino Kaku Gothic Pro" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                        </textField>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Sc-FK-HUC">
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="OAh-GT-oY7"/>
+                            </constraints>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" name="HiraKakuPro-W3" family="Hiragino Kaku Gothic Pro" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Lfr-3I-zWL" secondAttribute="trailing" constant="20" id="1fM-dl-tnB"/>
+                        <constraint firstAttribute="trailing" secondItem="7Kp-Kg-Hzx" secondAttribute="trailing" constant="20" id="3u1-97-N4w"/>
+                        <constraint firstAttribute="height" constant="240" id="4dl-UB-UrH"/>
+                        <constraint firstItem="Lfr-3I-zWL" firstAttribute="top" secondItem="7Kp-Kg-Hzx" secondAttribute="bottom" id="9HX-bI-uYl"/>
+                        <constraint firstItem="7Kp-Kg-Hzx" firstAttribute="top" secondItem="qfS-lp-4ZG" secondAttribute="bottom" constant="30" id="PXf-xK-AiO"/>
+                        <constraint firstAttribute="trailing" secondItem="4Sc-FK-HUC" secondAttribute="trailing" constant="20" id="dzO-Tu-aUg"/>
+                        <constraint firstItem="4Sc-FK-HUC" firstAttribute="leading" secondItem="hwt-Kj-tyE" secondAttribute="leading" constant="20" id="fVC-YU-5vk"/>
+                        <constraint firstItem="qfS-lp-4ZG" firstAttribute="leading" secondItem="hwt-Kj-tyE" secondAttribute="leading" constant="20" id="hUN-C2-Xoc"/>
+                        <constraint firstItem="7Kp-Kg-Hzx" firstAttribute="leading" secondItem="hwt-Kj-tyE" secondAttribute="leading" constant="20" id="i2L-60-mme"/>
+                        <constraint firstItem="Lfr-3I-zWL" firstAttribute="leading" secondItem="hwt-Kj-tyE" secondAttribute="leading" constant="20" id="j2V-Xw-2sg"/>
+                        <constraint firstItem="qfS-lp-4ZG" firstAttribute="top" secondItem="4Sc-FK-HUC" secondAttribute="bottom" constant="10" id="rTU-4y-djv"/>
+                        <constraint firstAttribute="bottom" secondItem="Lfr-3I-zWL" secondAttribute="bottom" id="w1Y-Fe-Ba4"/>
+                        <constraint firstAttribute="trailing" secondItem="qfS-lp-4ZG" secondAttribute="trailing" constant="20" id="zRR-Ka-nZ6"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="hwt-Kj-tyE" secondAttribute="trailing" constant="20" id="G9K-DV-jwP"/>
+                <constraint firstItem="hwt-Kj-tyE" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Gmm-sU-jXc"/>
+                <constraint firstItem="hwt-Kj-tyE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="seo-dS-hXo"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="login_btn_fb" width="259" height="50"/>
+    </resources>
+</document>
