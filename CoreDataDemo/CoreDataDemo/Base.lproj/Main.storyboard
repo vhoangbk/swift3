@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CoreDataDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EGi-ze-3O8">
+                                <state key="normal" title="Save"/>
+                                <connections>
+                                    <action selector="pressSave:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tm8-BZ-lTp"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X1X-Cd-xPi">
+                                <state key="normal" title="Read"/>
+                                <connections>
+                                    <action selector="pressRead:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qun-nz-3WO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IIy-Sy-bTf">
+                                <state key="normal" title="Read by id"/>
+                                <connections>
+                                    <action selector="pressReadById:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f9t-7E-igt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b6p-7E-9GE">
+                                <state key="normal" title="Read by"/>
+                                <connections>
+                                    <action selector="pressReadBy:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3We-an-fWP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="EGi-ze-3O8" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="60" id="HEf-6v-xkI"/>
+                            <constraint firstItem="IIy-Sy-bTf" firstAttribute="top" secondItem="X1X-Cd-xPi" secondAttribute="bottom" constant="20" id="SAt-Zh-nrG"/>
+                            <constraint firstItem="b6p-7E-9GE" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="60" id="UyN-21-EJ0"/>
+                            <constraint firstItem="X1X-Cd-xPi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="60" id="VdE-eG-ab9"/>
+                            <constraint firstItem="EGi-ze-3O8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="60" id="VeZ-lj-zaP"/>
+                            <constraint firstItem="b6p-7E-9GE" firstAttribute="top" secondItem="IIy-Sy-bTf" secondAttribute="bottom" constant="20" id="ri9-py-xmp"/>
+                            <constraint firstItem="IIy-Sy-bTf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="60" id="vje-Fc-yce"/>
+                            <constraint firstItem="X1X-Cd-xPi" firstAttribute="top" secondItem="EGi-ze-3O8" secondAttribute="bottom" constant="20" id="ymU-di-kbO"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
