@@ -1,0 +1,336 @@
+/**
+ * Localizable.strings
+ *
+ * @author : Archi-Edge
+ * @copyright © 2016 LocoBee. All rights reserved.
+ */
+
+
+// comon
+"btn_ok" = "OK";
+"success" = "成功";
+"date_full" = "yyyy年MM月dd日";
+"date_full_2" = "yyyy年MM月dd日 (E)";
+"cancel" = "キャンセル";
+"send" = "送信";
+"btn_clear" = "クリア";
+"search" = "検索";
+"warning_gps" = "続行するにはGoogleの位置情報サービスを使用して端末の位置情報を有効にしてください";
+
+//login
+"login" = "ログイン";
+"account_facebook" = "Facebookで登録/ログイン";
+"account_creation" = "メールアドレスで登録";
+"terms_of_use_and_rivacy_policy" = "登録することで、#利用規約#および$プライバシーポリシー$に同意するものとします。";
+
+//login and register
+"btn_register" = "登録";
+"user_name_empty" = "メールアドレスを入力してください。";
+"password_empty" = "パスワードを入力してください。";
+
+"login_password" = "パスワード";
+"language_level_add_language_level" = "レベルの設定";
+
+// End Login
+
+//message error api
+"message_error_network" = "インターネットに繋がりません。";
+"error_code_common" = "サーバーの接続に失敗しました。\nお待ちいただいてから再度お試しください。";
+"error_code_common_with_error_code" = "エラー%@が発生しました。しばらくお待ちいただいてから再度お試しください。";
+
+
+// HomeFragment
+//"text_time_by_day" = "昨日";
+"nodata_all_post" = "投稿がありません。";
+"nodata_old_post" = "過去の投稿がありません。";
+
+//chat group
+"title_posting" = "投稿";
+
+// Map share location chat
+"current_location" = "現在地";
+"pinned_location" = "この場所";
+"title_activity_share_current_location" = "位置情報";
+"user_location_shared" = "位置共有";
+"header_map" = "マップ";
+"location_shared" = "位置を共有しました。";
+"location_stop_shared" = "位置共有が中止されました。";
+"confirm_share_location" = "位置情報を20分間表示します。よろしいですか？";
+
+//chat
+"choose_camera" = "写真を撮影";
+"choose_gallery" = "カメラロールから選択";
+"choose_share_location" = "位置情報を送信";
+"enter_message" = "メッセージを入力";
+
+// activity location account info
+"button_chat" = "チャット";
+
+// post menu view
+"post_food"= "食事";
+"post_drink"= "買い物";
+"post_play"= "遊び";
+"post_help"= "ヘルプ！";
+
+// activity post
+"activity_post_today" = "今日のみ";
+"activity_post_tomorrow" = "明日まで";
+"activity_post_date_specified" = "日付指定";
+"post_title_name_empty" = "タイトルを入力してください。";
+"post_content_empty" = "内容を入力してください。";
+"post_language_empty" = "投稿言語を選択してください。";
+"activity_post_enter_title" = "タイトルを入力";
+"activity_post_enter_contents" = "内容本文（2000文字まで）";
+"activity_history_post_yesterday" = "昨日";
+"not_get_location" = "位置情報を取得できません。";
+"post_map_confirm_with_location" = "投稿します。\nよろしいですか？";
+"post_map_confirm_without_location" = "待ち合わせ場所を指定せずに投稿します。\nよろしいですか？";
+"activity_post_title" = "タイトル";
+"activity_post_content" = "内容";
+"activity_post1_btn_post" = "投稿";
+"activity_post_map_title1" = "待ち合わせ場所をタップ";
+"activity_post_map_title2" = "指定しない";
+"post_time_validate" = "今日以降の日付を指定してください";
+
+//login
+"close" = "閉じる";
+
+//register
+"next" = "次へ";
+"done" = "完了";
+"email_address" = "メールアドレスを入力";
+"password" = "パスワードを入力";
+"email_empty" = "メールアドレスを入力してください。";
+"password_less_6_character" = "パスワードは６文字以上で入力してください。";
+"email_incorect_format" = "メールアドレスの形式が不正です。";
+"enter_name" = "LocoBeeへようこそ \nあなたのプロフィールを教えてください。";
+"name" = "名";
+"sur_name" = "姓";
+"enter_email_address" = "メールアドレスを教えてください。";
+"select_country_of_origin" = "出身の国を選択してください。";
+"name_empty" = "お名前を入力してください。";
+"delete_photo" = "写真を削除";
+"register_photo" = "写真を登録";
+"enter_password" = "パスワードを設定してください。";
+
+//login account
+"email_address" = "メールアドレスを入力";
+"forget_password" = "パスワードを忘れた";
+"reissue" = "再発行";
+"password_less_6_character" = "パスワードは6文字以上で入手してください";
+"enter_user_name" = "メールアドレス";
+"login_facebook_fail" = "Facebookのログインに失敗しました。";
+
+// Message notification
+"tab_message_fragment" = "メッセージ";
+"tab_notification_fragment" = "通知";
+"nodata_message_post" = "メッセージがありません。";
+"nodata_notify_post" = "通知がありません。";
+"txt_is_image" = "写真をシェアしました。";
+"txt_is_share_location" = "位置情報をシェアしました";
+
+//dialog register account
+"you_can_set_it_by_registering_an_account" = "アカウントを登録すると、設定することができます。";
+"once_you_register_your_account_you_can_post_it" = "アカウントを登録すると、投稿することができます。";
+"you_can_send_a_message_by_registering_an_account" = "アカウントを登録するとメッセージを送ることができます。";
+"once_you_register_your_account_you_will_be_able_to_follow_the_user" = "アカウントを登録するとユーザーをフォローすることができます。";
+
+// setting language
+"degree_language_level_1" = "初心者";
+"degree_language_level_2" = "中級者";
+"degree_language_level_3" = "ネイティブ";
+"degree_language_level_1_describe" = "単語は理解できる。ジェスチャーを交えながらコミュニケーションできる。";
+"degree_language_level_2_describe" = "簡単な日常会話なら話すことができる";
+"degree_language_level_3_describe" = "ネイティブ、もしくはネイティブに近いレベルで自然に話すことができる";
+"note_setting_fragment_add_level_language" = "言語の登録は3つまでしか登録できません。";
+"not_remove_all_language_setting" = "すべての設定を削除することはできません";
+
+// change pass
+"current_password" = "現在のパスワード";
+"new_password" = "新しいパスワード";
+"re_enter_new_password" = "新しいパスワードの再入力";
+"password_empty" = "パスワードを入力してください。";
+"password_not_matched" = "新しいパスワードと新しいパスワードの再入力が一致しません";
+"password_less_6_character" = "パスワードは6文字以上で入力してください。";
+"setting" = "設定";
+
+//edit profile
+"unknown" = "指定なし";
+"male" = "男性";
+"female" = "女性";
+"profile" = "プロフィール";
+"setting_avatar" = "写真を変更";
+
+//setting
+"header_activity_setting" = "設定";
+"edit_profile" = "プロフィールを編集";
+"changing_language_level" = "言語レベルの変更";
+"change_password" = "パスワードの変更";
+"setting_help" = "ヘルプ";
+"setting_notification" = "お知らせ";
+"setting_privacy_policy" = "プライバシーポリシー";
+"setting_terms_of_service" = "利用規約";
+"setting_logout" = "ログアウト";
+"setting_help_title" = "";
+"setting_notice_title" = "お知らせ";
+"setting_terms_title" = "";
+"setting_policy_title" = "";
+
+//profile
+"birthday" = "誕生日";
+"sex" = "性別";
+"blocked" = "このユーザーがブロックされています。";
+"unblock" = "ブロックを解除する";
+"block_this_account" = "このアカウントをブロック";
+"unblock_this_account" = "このアカウントのブロックを解除する";
+
+// Date time notification
+"one_day_format" = "%d時間%d分前";
+"one_hour_format" = "%d分前";
+"one_minute_format" = "数秒前";
+
+// notification detail
+"title_header_notification_detail" = "通知詳細";
+
+//old topic
+"title_topic_old" = "過去の投稿";
+
+"image_upload_fail" = "写真のアップロードに失敗しました。";
+
+//notification chat one socket
+"notification_send_photo" = "さんがあなたに写真を送信しました。";
+"notification_send_location" = "さんがあなたにマップを送信しました。";
+
+"is_typing" = "さんが入力中";
+
+// edit profile
+"change_pass_success" = "パスワードを変更しました。";
+
+// language level
+"language_level_title" = "言語レベルの変更";
+"language_level_content" = "会話できる言語を追加してください。言語を設定すると、同じ言語を話せるユーザーと交流できます。";
+"language_level_add_language" = "言語の追加";
+"language_level_note" = "星をタップしてこの言語のレベルを \n設定してください";
+"language_level_back" = "言語の追加";
+
+//Chat group
+"title_posting" = "投稿";
+
+// ------------------------
+// message api
+// ------------------------
+//10000 API_KEY_REQUIRED
+"error_10000" = "セッションがタイムアウトしました。ログインした状態で長時間操作をしなかったため、サーバとの接続が切断されました。再度ログインしてください。";
+//10001 API_KEY_INVALID
+"error_10001" = "セッションがタイムアウトしました。ログインした状態で長時間操作をしなかったため、サーバとの接続が切断されました。再度ログインしてください。";
+
+
+//11000 LOGIN_FAILED
+"error_11000" = "メールアドレスまたはパスワードが間違っています。";
+//11100 EMAIL_REQUIRED
+"error_11100" = "メールアドレスが指定されていません。";
+//11101 EMAIL_INVALID
+"error_11101" = "メールアドレスの形式が不正です。";
+//11102 EMAIL_NOT_EXIST
+"error_11102" = "メールアドレスが存在しません。";
+//11103 EMAIL_DUPLICATE
+"error_11103" = "そのメールアドレスは既に登録されています。";
+
+
+//11110 PASSWORD_REQUIRED
+"error_11110" = "パスワードが指定されていません。";
+//11111 PASSWORD_MIN_LENGTH_INVALID
+"error_11111" = "パスワードは６文字以上で入力してください。";
+
+
+//11120 LONGITUDE_REQUIRED
+"error_11120" = "経度が指定されていません。";
+//11121 LONGITUDE_INVALID
+"error_11121" = "経度が不正です。";
+
+
+//11130 LATITUDE_REQUIRED
+"error_11130" = "緯度が指定されていません。";
+//11131 LATITUDE_INVALID
+"error_11131" = "緯度が不正です。";
+
+
+//11140 LOGIN_TYPE_REQUIRED
+"error_11140" = "ログイン種別が指定されていません。";
+//11141 LOGIN_TYPE_INVALID
+"error_11141" = "ログイン種別が不正です。";
+//11142 SET_API_KEY_EXPIRED
+"error_11142" = "セッションがタイムアウトしました。ログインした状態で長時間操作をしなかったため、サーバとの接続が切断されました。再度ログインしてください。";
+//11143 TIME_EXPIRED_API_KEY
+"error_11143" = "セッションがタイムアウトしました。ログインした状態で長時間操作をしなかったため、サーバとの接続が切断されました。再度ログインしてください。";
+//11146 TITLE_REQUIRED
+"error_11146" = "タイトルが指定されていません。";
+//11147 CONTENT_REQUIRED
+"error_11147" = "本文が指定されていません。";
+//11148 CATEGORY_REQUIRED
+"error_11148" = "カテゴリーが指定されていません。";
+//11149 CATEGORY_INVALID
+"error_11149" = "カテゴリーが不正です。";
+//11157 API_KEY_EXPIRED
+"error_11157" = "セッションがタイムアウトしました。ログインした状態で長時間操作をしなかったため、サーバとの接続が切断されました。再度ログインしてください。";
+
+
+//12001 ADD_USER_ERROR
+"error_12001" = "ユーザーの登録に失敗しました。";
+//12100 FIRST_NAME_REQUIRED
+"error_12100" = "名が指定されていません。";
+//12110 LAST_NAME_REQUIRED
+"error_12110" = "姓が指定されていません。";
+
+//13001 ADD_TOPIC_ERROR
+"error_13001" = "投稿に失敗しました。";
+
+//12111 WRONG_OLD_PASSWORD
+"error_12111" = "現在のパスワードが不正です。";
+//12112 CHANGE_PASSWORD_ERROR
+"error_12112" = "エラーが発生しました。もう一度お試しください。";
+// 15002 TOPIC_NOT_FOUND
+"error_15002" = "この投稿のご利用は停止されています。";
+
+//photo, camera
+"not_access_photo" = "アルバムにアクセス出来ません。";
+"not_access_camera" = "カメラが許可されていないため、本機能は利用することが出来ません。設定アプリよりカメラを許可してください。";
+
+//edit profile
+"edit_profile_success" = "プロフィールを変更しました。";
+"setting_address" = "現住所";
+"setting_user_infor" = "自己紹介";
+"setting_birthday" = "誕生日";
+"setting_sex" = "指定なし";
+"guest_user" = "Guest User";
+
+//in app purchase service
+"premium_service" = "プレミアムサービス";
+"hide_ads" = "広告の非表示";
+"by_purchasing_it" = "購入することでアプリ内のバナー広告を\nすべて非表示にします。";
+"purchase_price" = "購入する";
+"by_purchasing_it_success" = "アプリで課金アイテムが購入できました。";
+"restore_purchase" = "購入を復元する";
+
+//retry upload image
+"message_retry_upload" = "画像はアップロードされませんでした";
+"redo" = "やり直す";
+"delete_upload" = "削除する";
+
+//datepicker
+"datepicker" = "日付指定";
+
+//remove topic, user
+"topic_is_deleted" = "この投稿のご利用は停止されています。";
+"user_is_deleted" = "このアカウントのご利用は停止されています。";
+
+// introduction
+"btn_next" = "スキップ";
+"introduction_page1_title" = "ようこそ";
+"introduction_page1_description" = "LOCOBEEは\n旅行者とロコ（現地の人）をつなぐアプリ";
+"introduction_page2_title" = "投稿する";
+"introduction_page2_description" = "旅行先でのオススメ観光地・美味しいお店\n困ったことをロコに相談しよう";
+"introduction_page3_title" = "会話する";
+"introduction_page3_description" = "同じ言語を話せるロコと\n気軽にチャットしよう";
+"introduction_page4_title" = "新しい旅を楽しもう";
+"introduction_page4_description" = "時には一緒に出かけたり\n充実した旅の思い出に";

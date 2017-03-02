@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="hirakakupro-w3.otf">
+            <string>HiraKakuPro-W3</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScreenShotMapViewController" customModule="Locobee" customModuleProvider="target">
+            <connections>
+                <outlet property="btnBack" destination="10Y-zs-41f" id="kOX-Rm-Xlz"/>
+                <outlet property="btnSendLocation" destination="Cuw-RD-R5l" id="ABk-bY-VH4"/>
+                <outlet property="mMapView" destination="WKf-zl-37w" id="hEk-jV-mfa"/>
+                <outlet property="mTitle" destination="boT-t1-bNN" id="Tvu-SM-AAS"/>
+                <outlet property="titleLocation" destination="34v-ts-Feh" id="uNx-h6-5Oq"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lrX-Hn-MA1">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
+                    <color key="backgroundColor" red="0.99607843137254903" green="0.82745098039215681" blue="0.011764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="FZw-gc-9Bm"/>
+                    </constraints>
+                </view>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="WKf-zl-37w">
+                    <rect key="frame" x="0.0" y="64" width="375" height="547"/>
+                </mapView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AU8-0T-St5" userLabel="Tab bar">
+                    <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="10Y-zs-41f">
+                            <rect key="frame" x="10" y="8" width="30" height="29"/>
+                            <fontDescription key="fontDescription" name="HiraKakuPro-W3" family="Hiragino Kaku Gothic Pro" pointSize="17"/>
+                            <connections>
+                                <action selector="pressActionBack:" destination="-1" eventType="touchUpInside" id="sKB-oU-0Rm"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="boT-t1-bNN">
+                            <rect key="frame" x="188" y="22" width="0.0" height="0.0"/>
+                            <fontDescription key="fontDescription" name="HiraKakuPro-W3" family="Hiragino Kaku Gothic Pro" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cuw-RD-R5l">
+                            <rect key="frame" x="335" y="8" width="30" height="29"/>
+                            <fontDescription key="fontDescription" name="HiraKakuPro-W3" family="Hiragino Kaku Gothic Pro" pointSize="17"/>
+                            <state key="normal">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="pressActionShareLocation:" destination="-1" eventType="touchUpInside" id="ZRa-3F-GR1"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.99607843137254903" green="0.82745098039215681" blue="0.011764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="10Y-zs-41f" firstAttribute="leading" secondItem="AU8-0T-St5" secondAttribute="leading" constant="10" id="0td-9b-9Mc"/>
+                        <constraint firstAttribute="height" constant="44" id="5ww-wN-QNk"/>
+                        <constraint firstItem="boT-t1-bNN" firstAttribute="centerX" secondItem="AU8-0T-St5" secondAttribute="centerX" id="84J-ef-6Lt"/>
+                        <constraint firstItem="Cuw-RD-R5l" firstAttribute="centerY" secondItem="AU8-0T-St5" secondAttribute="centerY" id="SaR-K8-5hc"/>
+                        <constraint firstAttribute="trailing" secondItem="Cuw-RD-R5l" secondAttribute="trailing" constant="10" id="YYC-W9-Nda"/>
+                        <constraint firstItem="10Y-zs-41f" firstAttribute="centerY" secondItem="AU8-0T-St5" secondAttribute="centerY" id="sg8-yk-UD8"/>
+                        <constraint firstItem="boT-t1-bNN" firstAttribute="centerY" secondItem="AU8-0T-St5" secondAttribute="centerY" id="uLd-Wg-zYZ"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JQJ-sB-HNx">
+                    <rect key="frame" x="0.0" y="611" width="375" height="56"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="34v-ts-Feh">
+                            <rect key="frame" x="20" y="18" width="355" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" red="0.53333333329999999" green="0.53333333329999999" blue="0.53333333329999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="34v-ts-Feh" firstAttribute="leading" secondItem="JQJ-sB-HNx" secondAttribute="leading" constant="20" id="IlA-6q-Cd9"/>
+                        <constraint firstAttribute="trailing" secondItem="34v-ts-Feh" secondAttribute="trailing" id="TW5-nZ-nqR"/>
+                        <constraint firstItem="34v-ts-Feh" firstAttribute="centerY" secondItem="JQJ-sB-HNx" secondAttribute="centerY" id="g4w-YI-SbQ"/>
+                        <constraint firstAttribute="height" constant="56" id="kHd-n6-yTC"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yde-3S-Upx">
+                    <rect key="frame" x="320" y="79" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="Lxq-RC-I5P"/>
+                        <constraint firstAttribute="height" constant="40" id="aFu-el-92H"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="icon_current_location"/>
+                    <connections>
+                        <action selector="pressCurrentLocation:" destination="-1" eventType="touchUpInside" id="2Zh-iv-5mj"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="JQJ-sB-HNx" secondAttribute="trailing" id="6qn-bs-GTf"/>
+                <constraint firstItem="lrX-Hn-MA1" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="7HO-p9-PCY"/>
+                <constraint firstItem="JQJ-sB-HNx" firstAttribute="top" secondItem="WKf-zl-37w" secondAttribute="bottom" id="9Om-m7-IfE"/>
+                <constraint firstAttribute="trailing" secondItem="Yde-3S-Upx" secondAttribute="trailing" constant="15" id="Cxk-FT-zKu"/>
+                <constraint firstItem="JQJ-sB-HNx" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="DSp-nq-hxI"/>
+                <constraint firstItem="AU8-0T-St5" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="MlU-Be-nWD"/>
+                <constraint firstItem="lrX-Hn-MA1" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="UkG-fN-JGG"/>
+                <constraint firstItem="WKf-zl-37w" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="dAD-kt-TI9"/>
+                <constraint firstItem="Yde-3S-Upx" firstAttribute="top" secondItem="AU8-0T-St5" secondAttribute="bottom" constant="15" id="eYv-gH-VfD"/>
+                <constraint firstAttribute="bottom" secondItem="JQJ-sB-HNx" secondAttribute="bottom" id="gsY-tD-puc"/>
+                <constraint firstItem="AU8-0T-St5" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="nnv-B7-jes"/>
+                <constraint firstItem="WKf-zl-37w" firstAttribute="top" secondItem="AU8-0T-St5" secondAttribute="bottom" id="omG-xj-V7G"/>
+                <constraint firstAttribute="trailing" secondItem="lrX-Hn-MA1" secondAttribute="trailing" id="qfN-dh-NKz"/>
+                <constraint firstAttribute="trailing" secondItem="WKf-zl-37w" secondAttribute="trailing" id="qov-2V-Ekg"/>
+                <constraint firstAttribute="trailing" secondItem="AU8-0T-St5" secondAttribute="trailing" id="u5b-F0-Frg"/>
+            </constraints>
+            <point key="canvasLocation" x="24.5" y="52.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_current_location" width="44" height="44"/>
+    </resources>
+</document>

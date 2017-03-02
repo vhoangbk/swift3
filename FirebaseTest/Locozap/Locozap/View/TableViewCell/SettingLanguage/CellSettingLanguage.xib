@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="CellSettingLanguage" customModule="Locobee" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="日本語" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JPY-gz-Rrc">
+                        <rect key="frame" x="15" y="0.0" width="183" height="44"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.30588235294117649" green="0.29019607843137252" blue="0.22352941176470587" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TbK-7C-uK0">
+                        <rect key="frame" x="285" y="10" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="Sok-d5-p8V"/>
+                            <constraint firstAttribute="height" constant="25" id="lKp-uI-t4q"/>
+                        </constraints>
+                        <state key="normal" image="ic_clear"/>
+                        <connections>
+                            <action selector="pressDelete:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="OJo-mk-MKY"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CEI-6V-ndJ" customClass="RatingBar" customModule="Locobee" customModuleProvider="target">
+                        <rect key="frame" x="208" y="14" width="60" height="17"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="MIo-xG-qb0"/>
+                            <constraint firstAttribute="height" constant="17" id="rE6-tQ-krG"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                <real key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="numStars">
+                                <integer key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="ratingMax">
+                                <real key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="image" keyPath="imageLight" value="ic_start_activated"/>
+                            <userDefinedRuntimeAttribute type="image" keyPath="imageDark" value="ic_start_normal"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="CEI-6V-ndJ" firstAttribute="leading" secondItem="JPY-gz-Rrc" secondAttribute="trailing" constant="10" id="0mx-Sa-RIj"/>
+                    <constraint firstAttribute="bottom" secondItem="JPY-gz-Rrc" secondAttribute="bottom" id="0w1-XO-LJk"/>
+                    <constraint firstAttribute="trailing" secondItem="TbK-7C-uK0" secondAttribute="trailing" constant="10" id="0ze-gr-4rl"/>
+                    <constraint firstItem="JPY-gz-Rrc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="7T2-Wd-CYh"/>
+                    <constraint firstItem="CEI-6V-ndJ" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="7ey-3Q-rkC"/>
+                    <constraint firstItem="JPY-gz-Rrc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Dqc-Gd-nSG"/>
+                    <constraint firstItem="TbK-7C-uK0" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="WmH-tc-EzL"/>
+                    <constraint firstItem="TbK-7C-uK0" firstAttribute="leading" secondItem="CEI-6V-ndJ" secondAttribute="trailing" constant="17" id="Ymt-66-hAr"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnDelete" destination="TbK-7C-uK0" id="vnF-DH-vlA"/>
+                <outlet property="levelLanguage" destination="CEI-6V-ndJ" id="vZI-TK-3OI"/>
+                <outlet property="nameLanguage" destination="JPY-gz-Rrc" id="vNU-Se-1Ar"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="51.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_clear" width="14" height="14"/>
+        <image name="ic_start_activated" width="17" height="16"/>
+        <image name="ic_start_normal" width="17" height="16"/>
+    </resources>
+</document>

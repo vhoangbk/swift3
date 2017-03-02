@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="hirakakupro-w3.otf">
+            <string>HiraKakuPro-W3</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterStep2ViewController" customModule="Locobee" customModuleProvider="target">
+            <connections>
+                <outlet property="lbTitle" destination="V8A-2m-Z9c" id="Fld-sP-1sc"/>
+                <outlet property="tfEmail" destination="PyC-kp-L8k" id="oY9-2P-WN8"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="メールアドレスを教えてください" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V8A-2m-Z9c">
+                    <rect key="frame" x="30" y="34" width="260" height="20.5"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TEd-HU-g0i">
+                    <rect key="frame" x="20" y="88.5" width="280" height="60"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="メールアドレスを入力" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PyC-kp-L8k">
+                            <rect key="frame" x="0.0" y="0.0" width="280" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="fww-gO-Sw9"/>
+                            </constraints>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                            <connections>
+                                <action selector="didEnd:" destination="-1" eventType="editingDidEndOnExit" id="IHc-kE-ish"/>
+                            </connections>
+                        </textField>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DiS-JM-Ty3">
+                            <rect key="frame" x="0.0" y="50" width="280" height="1"/>
+                            <color key="backgroundColor" red="1" green="0.94901960784313721" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="NpA-10-hmv"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="PyC-kp-L8k" firstAttribute="top" secondItem="TEd-HU-g0i" secondAttribute="top" id="1Fc-Qs-ZK6"/>
+                        <constraint firstAttribute="trailing" secondItem="PyC-kp-L8k" secondAttribute="trailing" id="3A4-pO-F3h"/>
+                        <constraint firstItem="PyC-kp-L8k" firstAttribute="leading" secondItem="TEd-HU-g0i" secondAttribute="leading" id="CmN-hc-1hE"/>
+                        <constraint firstAttribute="trailing" secondItem="DiS-JM-Ty3" secondAttribute="trailing" id="ZIF-yV-taa"/>
+                        <constraint firstItem="DiS-JM-Ty3" firstAttribute="top" secondItem="PyC-kp-L8k" secondAttribute="bottom" id="bK9-p0-LfJ"/>
+                        <constraint firstItem="DiS-JM-Ty3" firstAttribute="leading" secondItem="TEd-HU-g0i" secondAttribute="leading" id="gcY-b4-2KZ"/>
+                        <constraint firstAttribute="height" constant="60" id="k2s-n7-S0q"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.60000002384185791" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2/4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FCO-cD-AER">
+                    <rect key="frame" x="133" y="518" width="54" height="30"/>
+                    <fontDescription key="fontDescription" name="HiraKakuPro-W3" family="Hiragino Kaku Gothic Pro" pointSize="30"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.99607843139999996" green="0.82745098039999998" blue="0.01176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="TEd-HU-g0i" secondAttribute="trailing" constant="20" id="3hZ-XT-x3G"/>
+                <constraint firstItem="V8A-2m-Z9c" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="34" id="6My-Jd-KYc"/>
+                <constraint firstItem="FCO-cD-AER" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="FSN-Ql-e75"/>
+                <constraint firstItem="V8A-2m-Z9c" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Pzk-HU-4Yp"/>
+                <constraint firstItem="TEd-HU-g0i" firstAttribute="top" secondItem="V8A-2m-Z9c" secondAttribute="bottom" constant="34" id="V2Z-EU-olH"/>
+                <constraint firstItem="TEd-HU-g0i" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="dkD-YC-24V"/>
+                <constraint firstAttribute="bottom" secondItem="FCO-cD-AER" secondAttribute="bottom" constant="20" id="s4w-0v-bEG"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PremiumViewController" customModule="Locobee" customModuleProvider="target">
+            <connections>
+                <outlet property="btnBack" destination="z3t-HT-Ujk" id="Oz8-gQ-nA3"/>
+                <outlet property="btnPurchasePrice" destination="KuP-6j-rCl" id="U2h-1F-KVn"/>
+                <outlet property="btnRestore" destination="t8T-TM-Ere" id="4py-Dd-ryn"/>
+                <outlet property="lbHideAds" destination="xnY-iM-a5f" id="2XH-vJ-Ii7"/>
+                <outlet property="lbPurchasing" destination="H0l-IM-VQV" id="9BL-jp-KLe"/>
+                <outlet property="lbTitle" destination="M5s-Gk-m7X" id="xLJ-dZ-IIL"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hte-2C-XgG">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="20"/>
+                    <color key="backgroundColor" red="0.99607843137254903" green="0.82745098039215681" blue="0.011764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="3wg-ji-Ws0"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HWq-xe-aZD">
+                    <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z3t-HT-Ujk">
+                            <rect key="frame" x="0.0" y="0.0" width="59" height="44"/>
+                            <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="設定" image="img_back">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="pressBack:" destination="-1" eventType="touchUpInside" id="PR2-ml-wtl"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="プレミアムサービス" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M5s-Gk-m7X">
+                            <rect key="frame" x="82" y="11" width="156" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.99607843137254903" green="0.82745098039215681" blue="0.011764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="z3t-HT-Ujk" firstAttribute="leading" secondItem="HWq-xe-aZD" secondAttribute="leading" id="GFH-6L-sdj"/>
+                        <constraint firstAttribute="height" constant="44" id="RQh-zZ-Z93"/>
+                        <constraint firstItem="M5s-Gk-m7X" firstAttribute="centerX" secondItem="HWq-xe-aZD" secondAttribute="centerX" id="d4c-1R-Ers"/>
+                        <constraint firstAttribute="bottom" secondItem="z3t-HT-Ujk" secondAttribute="bottom" id="l1M-4z-ubv"/>
+                        <constraint firstItem="z3t-HT-Ujk" firstAttribute="top" secondItem="HWq-xe-aZD" secondAttribute="top" id="sF1-3j-LS3"/>
+                        <constraint firstItem="M5s-Gk-m7X" firstAttribute="centerY" secondItem="HWq-xe-aZD" secondAttribute="centerY" id="whc-ES-5b5"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OVZ-Zq-JII">
+                    <rect key="frame" x="0.0" y="114" width="320" height="424"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_remove_ads" translatesAutoresizingMaskIntoConstraints="NO" id="418-FA-REL">
+                            <rect key="frame" x="100" y="0.0" width="120" height="135"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="120" id="unh-Aa-IVn"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="広告の非表示" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xnY-iM-a5f">
+                            <rect key="frame" x="99" y="175" width="123" height="24"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H0l-IM-VQV">
+                            <rect key="frame" x="31" y="229" width="258" height="34"/>
+                            <string key="text">購入することでアプリ内のバナー広告を
+すべて非表示にします。</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KuP-6j-rCl">
+                            <rect key="frame" x="50" y="293" width="220" height="37"/>
+                            <color key="backgroundColor" red="0.86666666670000003" green="0.21960784310000001" blue="0.21960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                            <inset key="contentEdgeInsets" minX="0.0" minY="10" maxX="0.0" maxY="10"/>
+                            <state key="normal" title="購入する">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerradius">
+                                    <integer key="value" value="5"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="pressPurchase:" destination="-1" eventType="touchUpInside" id="1B8-du-Cik"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t8T-TM-Ere">
+                            <rect key="frame" x="50" y="350" width="221" height="37"/>
+                            <color key="backgroundColor" red="0.29411764705882354" green="0.45098039215686275" blue="0.81960784313725488" alpha="1" colorSpace="calibratedRGB"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                            <inset key="contentEdgeInsets" minX="0.0" minY="10" maxX="0.0" maxY="10"/>
+                            <state key="normal" title="購入を復元する">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="pressRestore:" destination="-1" eventType="touchUpInside" id="ejh-iF-ogh"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="xnY-iM-a5f" firstAttribute="centerX" secondItem="OVZ-Zq-JII" secondAttribute="centerX" id="0ei-2n-p4B"/>
+                        <constraint firstItem="418-FA-REL" firstAttribute="centerX" secondItem="OVZ-Zq-JII" secondAttribute="centerX" id="A0u-9w-gWQ"/>
+                        <constraint firstItem="H0l-IM-VQV" firstAttribute="centerX" secondItem="OVZ-Zq-JII" secondAttribute="centerX" id="Lif-Xw-HKZ"/>
+                        <constraint firstItem="t8T-TM-Ere" firstAttribute="leading" secondItem="OVZ-Zq-JII" secondAttribute="leading" constant="50" id="Ozv-aV-RmI"/>
+                        <constraint firstItem="KuP-6j-rCl" firstAttribute="leading" secondItem="OVZ-Zq-JII" secondAttribute="leading" constant="50" id="QtV-db-d3u"/>
+                        <constraint firstItem="xnY-iM-a5f" firstAttribute="top" secondItem="418-FA-REL" secondAttribute="bottom" constant="40" id="Rff-iA-4LE"/>
+                        <constraint firstItem="418-FA-REL" firstAttribute="top" secondItem="OVZ-Zq-JII" secondAttribute="top" id="U3b-g0-zZZ"/>
+                        <constraint firstItem="t8T-TM-Ere" firstAttribute="centerX" secondItem="OVZ-Zq-JII" secondAttribute="centerX" id="bJ8-nw-S3c"/>
+                        <constraint firstItem="H0l-IM-VQV" firstAttribute="top" secondItem="xnY-iM-a5f" secondAttribute="bottom" constant="30" id="mzc-PE-jls"/>
+                        <constraint firstItem="KuP-6j-rCl" firstAttribute="centerX" secondItem="OVZ-Zq-JII" secondAttribute="centerX" id="tcn-WA-Dxf"/>
+                        <constraint firstItem="t8T-TM-Ere" firstAttribute="top" secondItem="KuP-6j-rCl" secondAttribute="bottom" constant="20" id="w0p-zK-ZLh"/>
+                        <constraint firstItem="KuP-6j-rCl" firstAttribute="top" secondItem="H0l-IM-VQV" secondAttribute="bottom" constant="30" id="xeN-pj-Cus"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="hte-2C-XgG" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="BWb-Go-5WV"/>
+                <constraint firstItem="OVZ-Zq-JII" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="C8h-Gc-BG5"/>
+                <constraint firstItem="HWq-xe-aZD" firstAttribute="top" secondItem="hte-2C-XgG" secondAttribute="bottom" id="E5m-qm-D2j"/>
+                <constraint firstItem="hte-2C-XgG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ImV-X6-60o"/>
+                <constraint firstItem="OVZ-Zq-JII" firstAttribute="top" secondItem="HWq-xe-aZD" secondAttribute="bottom" constant="50" id="IrU-XS-OUg"/>
+                <constraint firstItem="HWq-xe-aZD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Q0H-sh-0dq"/>
+                <constraint firstAttribute="trailing" secondItem="HWq-xe-aZD" secondAttribute="trailing" id="YNl-a2-dUf"/>
+                <constraint firstAttribute="trailing" secondItem="hte-2C-XgG" secondAttribute="trailing" id="lef-j9-obc"/>
+                <constraint firstAttribute="trailing" secondItem="OVZ-Zq-JII" secondAttribute="trailing" id="p4g-bQ-RI2"/>
+                <constraint firstItem="OVZ-Zq-JII" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="wGO-Oj-mzY"/>
+                <constraint firstAttribute="bottom" secondItem="OVZ-Zq-JII" secondAttribute="bottom" constant="30" id="xuC-NV-VGT"/>
+            </constraints>
+            <point key="canvasLocation" x="32" y="78"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_remove_ads" width="118" height="135"/>
+        <image name="img_back" width="12" height="20"/>
+    </resources>
+</document>

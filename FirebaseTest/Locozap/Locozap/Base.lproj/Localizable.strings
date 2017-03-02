@@ -1,0 +1,382 @@
+/**
+ * Localizable.strings
+ *
+ * @author : Archi-Edge
+ * @copyright © 2016 LocoBee. All rights reserved.
+ */
+
+// comon
+"btn_ok" = "OK";
+"success" = "Success";
+"date_full" = "yyyy/MM/dd";
+"date_full_2" = "yyyy/MM/dd (E)";
+"cancel" = "Cancel";
+"send" = "Send";
+"btn_clear" = "Clear";
+"search" = "Search";
+"warning_gps" = "Please enable Google location information services on your device to continue";
+
+//login
+"login" = "Login";
+"account_facebook" = "Register/Login with Facebook";
+"account_creation" = "Register your Email address";
+"terms_of_use_and_rivacy_policy" = "By registering you agree to the #Terms of Service# and $Privacy Policy$.";
+
+//login and register
+//"enter_re_password" = "Retype Enter password";
+//"btn_login" = "Login";
+"btn_register" = "Register";
+//"btn_register_account" = "Register new account";
+//"title_login" = "Login";
+//"title_register" = "Register";
+"user_name_empty" = "Please enter your Email address.";
+"password_empty" = "Please enter your password.";
+//"location_empty" = "Please wait get location";
+//"password_incorrect" = "Retype password incorrect";
+"login_facebook_fail" = "Facebook login failed.";
+// End Login
+
+//message error api
+"message_error_network" = "You are not connected to the internet.";
+"error_code_common" = "Connection to the server failed. \nPlease wait a few moments and try again.";
+"error_code_common_with_error_code" = "An error has occurred %@. Please try again you wait for a while.";
+
+// HomeFragment
+//"text_time_by_day" = "Yesterday";
+"nodata_all_post" = "There are no posts.";
+"nodata_old_post" = "There are no previous posts.";
+
+//MapFragment
+"header_map" = "Map";
+"confirm_share_location" = "Position will be shown for 20 min. Are you sure?";
+
+//chat group
+"title_posting" = "Post";
+
+// Map share location chat
+"current_location" = "Current location";
+"pinned_location" = "Pinned location";
+"title_activity_share_current_location" = "Location Information";
+"user_location_shared" = "Share location";
+"header_map" = "Map";
+"location_shared" = "You shared your location.";
+"location_stop_shared" = "You hid your location.";
+
+//chat
+"choose_camera" = "Take a picture";
+"choose_gallery" = "Choose from Camera Roll";
+"choose_share_location" = "Send your location information";
+"enter_message" = "Enter a message";
+
+// activity location account info
+"button_chat" = "Chat";
+//"button_friend_request" = "Friend request";
+//"title_left_tool_bar" = "Tokyo";
+//"title_center_tool_bar" = "Tokyo, Shibuya-ku,";
+//"name_japan_location_account_info" = "Japanese";
+//"name_english_location_account_info" = "English";
+//"name_portuguese_location_account_info" = "Portuguese";
+
+// post menu view
+"post_food"= "Restaurant/bar";
+"post_drink"= "Shopping";
+"post_play"= "Activity";
+"post_help"= "Need help";
+
+// activity post
+"activity_post_today" = "Today only";
+"activity_post_tomorrow" = "Until tomorrow";
+"activity_post_date_specified" = "Specified date";
+"post_title_name_empty" = "Please enter a title.";
+"post_content_empty" = "Please enter content.";
+"post_language_empty" = "Please choose a language.";
+"activity_post_enter_title" = "Enter a title";
+"activity_post_enter_contents" = "Body (2000 character maximum)";
+"not_get_location" = "Cannot find your location.";
+"post_map_confirm_with_location" = "This will be posted. \nAre you sure?";
+"post_map_confirm_without_location" = "This will be posted without a specified meeting location.  \nAre you sure?";
+"activity_post_title" = "Title";
+"activity_post_content" = "Content";
+"activity_post1_btn_post" = "Post";
+"activity_post_map_title1" = "Tap a location to meet";
+"activity_post_map_title2" = "Not specified";
+"post_time_validate" = "Please choose posting period.";
+
+
+// History post
+"activity_history_post_yesterday" = "Yesterday";
+
+//login
+"close" = "Close";
+
+//register
+"enter_name" = "Welcome to LocoBee  \nPlease create a profile.";
+"name" = "First Name";
+"sur_name" = "Last Name";
+"next" = "Next";
+"done" = "Done";
+"password" = "Enter your password";
+//"america" = "America";
+"name_empty" = "Please enter your name.";
+//"surname_empty" = "SurName not empty";
+"email_empty" = "Please enter your Email address.";
+"password_less_6_character" = "Please enter a password with 6 or more characters.";
+"email_incorect_format" = "The Email address is invalid.";
+"delete_photo" = "Delete photo";
+"enter_email_address" = "Please enter your Email address.";
+"select_country_of_origin" = "Please choose your home country.";
+"register_photo" = "Register photo";
+"enter_password" = "Please set your password.";
+
+//login account
+"email_address" = "Enter your Email address";
+"forget_password" = "I forgot my password";
+"reissue" = "Create new password";
+"password_less_6_character" = "Please enter a password with 6 or more characters.";
+"enter_user_name" = "Email Address";
+"login_password" = "Password";
+
+// Message notification
+"tab_message_fragment" = "Message";
+"tab_notification_fragment" = "Notification";
+"nodata_message_post" = "There are no messages.";
+"nodata_notify_post" = "There are no notifications.";
+"txt_is_image" = "You shared a photo.";
+"txt_is_share_location" = "You shared your location.";
+
+//dialog register account
+"you_can_set_it_by_registering_an_account" = "Register an account and manage your settings.";
+"once_you_register_your_account_you_can_post_it" = "Register an account and start posting.";
+"you_can_send_a_message_by_registering_an_account" = "Register an account and send messages.";
+"once_you_register_your_account_you_will_be_able_to_follow_the_user" = "Register an account  and follow other users.";
+
+// setting language
+"degree_language_level_1" = "Beginner";
+"degree_language_level_2" = "Intermediate";
+"degree_language_level_3" = "Native";
+"degree_language_level_1_describe" = "I can communicate through words and gestures.";
+"degree_language_level_2_describe" = "I can hold simple everyday conversations.";
+"degree_language_level_3_describe" = "I can speak naturally like a native or close to native level";
+"note_setting_fragment_add_level_language" = "You cannot register more than 3 languages.";
+"not_remove_all_language_setting" = "You cannot delete all settings.";
+
+// change pass
+"current_password" = "Current password";
+"new_password" = "New password";
+"re_enter_new_password" = "Re-enter new password";
+"password_empty" = "Please enter your password.";
+"password_not_matched" = "Password does not match the confirm password";
+"password_less_6_character" = "Please enter a password with 6 or more characters.";
+"setting" = "Settings";
+
+
+//edit profile
+"unknown" = "Not specified";
+"male" = "Male";
+"female" = "Female";
+"profile" = "Profile";
+"setting_avatar" = "Change photo";
+
+//setting
+"header_activity_setting" = "Settings";
+"edit_profile" = "Edit profile";
+"changing_language_level" = "Change language level";
+"change_password" = "Change password";
+"setting_help" = "Help";
+"setting_notification" = "Notification";
+"setting_privacy_policy" = "Privacy policy";
+"setting_terms_of_service" = "Terms of Service";
+"setting_logout" = "Logout";
+"setting_help_title" = "";
+"setting_notice_title" = "Notification";
+"setting_terms_title" = "";
+"setting_policy_title" = "";
+
+//profile
+"birthday" = "Birthday";
+"sex" = "Gender";
+"blocked" = "This user is blocked";
+"unblock" = "Unblock";
+"block_this_account" = "Block this account";
+"unblock_this_account" = "Unblock this account";
+"guest_user" = "Guest User";
+
+// Date time notification
+"one_day_format" = "%dhour %dminutes ago";
+"one_hour_format" = "%dminutes ago";
+"one_minute_format" = "few seconds ago";
+
+// notification detail
+"title_header_notification_detail" = "Notification Details";
+
+//old topic
+"title_topic_old" = "Previous Posts";
+
+"image_upload_fail" = "Photo failed to upload.";
+
+//notification chat one socket
+"notification_send_photo" = " sent you a photo.";
+"notification_send_location" = " sent you a map.";
+
+
+"is_typing" = " is typing";
+
+// edit profile
+"change_pass_success" = "You changed your password.";
+
+// language level
+"language_level_title" = "Change language level";
+"language_level_content" = "Please add a language you can converse in. Set a language and communicate with others who speak that language.";
+"language_level_add_language" = "Add language";
+"language_level_add_language_level" = "Level setting";
+"language_level_note" = "Please set your language level \nby tapping the star";
+"language_level_back" = "Add language";
+
+//Chat group
+"title_posting" = "Post";
+
+// ------------------------
+// message api
+// ------------------------
+//1000 METHOD_NOT_ALLOWED
+//"error_1000" = "Method is not allowed";
+//10000 API_KEY_REQUIRED
+"error_10000" = "The session timed out. Connection to the server ended due to being logged in for a long time with no activity. Please login again.";
+//10001 API_KEY_INVALID
+"error_10001" = "The session timed out. Connection to the server ended due to being logged in for a long time with no activity. Please login again.";
+//10002 OFFSET_INVALID
+//"error_10002" = "Offset is invalid";
+//10003 LIMIT_INVALID
+//"error_10003" = "Limit is invalid";
+
+
+//11000 LOGIN_FAILED
+"error_11000" = "Email address or password is incorrect.";
+//11100 EMAIL_REQUIRED
+"error_11100" = "Email address has not been specified.";
+//11101 EMAIL_INVALID
+"error_11101" = "Email address is invalid.";
+//11102 EMAIL_NOT_EXIST
+"error_11102" = "Email address does not exist.";
+//11103 EMAIL_DUPLICATE
+"error_11103" = "That Email address is already registered.";
+
+
+//11110 PASSWORD_REQUIRED
+"error_11110" = "Password has not been specified.";
+//11111 PASSWORD_MIN_LENGTH_INVALID
+"error_11111" = "Please enter a password with 6 or more characters.";
+
+
+//11120 LONGITUDE_REQUIRED
+"error_11120" = "Longitude has not been specified.";
+//11121 LONGITUDE_INVALID
+"error_11121" = "Longitude is invalid.";
+
+
+//11130 LATITUDE_REQUIRED
+"error_11130" = "Latitude has not been specified.";
+//11131 LATITUDE_INVALID
+"error_11131" = "Latitude is invalid";
+
+
+//11140 LOGIN_TYPE_REQUIRED
+"error_11140" = "Login type has not been specified.";
+//11141 LOGIN_TYPE_INVALID
+"error_11141" = "Login type is invalid";
+//11142 SET_API_KEY_EXPIRED
+"error_11142" = "The session timed out. Connection to the server ended due to being logged in for a long time with no activity. Please login again.";
+//11143 TIME_EXPIRED_API_KEY
+"error_11143" = "The session timed out. Connection to the server ended due to being logged in for a long time with no activity. Please login again.";
+//11144 OVER_MAX_LANGUAGE
+//"error_11144" = "Over max language";
+//11145 EMPTY_LANGUAGE_ARRAY
+//"error_11145" = "No language setting";
+//11146 TITLE_REQUIRED
+"error_11146" = "Title has not been specified.";
+//11147 CONTENT_REQUIRED
+"error_11147" = "Contents have not been specified.";
+//11148 CATEGORY_REQUIRED
+"error_11148" = "Category has not been specified.";
+//11149 CATEGORY_INVALID
+"error_11149" = "Category is invalid";
+
+
+//11150 LIMIT_CATEGORY_REQUIRED
+//"error_11150" = "Limit category is required";
+//11151 LIMIT_CATEGORY_INVALID
+//"error_11151" = "Limit category is invalid";
+//11152 TOPIC_LIMIT_REQUIRED
+//"error_11152" = "Topic limit is required";
+//11153 TOPIC_LIMIT_INVALID
+//"error_11153" = "Topic limit is invalid";
+//11154 DISTANCE_NOT_IN_VALID_RANGE
+//"error_11154" = "Distance is not invalid range";
+//11155 USER_ID_REQUIRED
+//"error_11155" = "User id is required";
+//11156 MESSAGE_ID_REQUIRED
+//"error_11156" = "Message id is required";
+//11157 API_KEY_EXPIRED
+"error_11157" = "The session timed out. Connection to the server ended due to being logged in for a long time with no activity. Please login again.";
+
+
+//12001 ADD_USER_ERROR
+"error_12001" = "User registration failed.";
+//12100 FIRST_NAME_REQUIRED
+"error_12100" = "No first name has been specified.";
+//12110 LAST_NAME_REQUIRED
+"error_12110" = "No last name has been specified.";
+
+//13001 ADD_TOPIC_ERROR
+"error_13001" = "Posting failed.";
+
+//12111 WRONG_OLD_PASSWORD
+"error_12111" = "The current password is invalid.";
+//12112 CHANGE_PASSWORD_ERROR
+"error_12112" = "An error has occurred. Please try again.";
+// 15002 TOPIC_NOT_FOUND
+"error_15002" = "This topic is forced stopping.";
+
+//photo, camera
+"not_access_photo" = "Cannot access album.";
+"not_access_camera" = "Cannot access camera. To use this function, please allow access to your camera in the settings application.";
+
+//edit profile
+"edit_profile_success" = "You changed your profile.";
+"setting_address" = "Current address";
+"setting_user_infor" = "Self introduction";
+"setting_birthday" = "Birthday";
+"setting_sex" = "Not specified";
+
+//in app purchase service
+"premium_service" = "Premium service";
+"hide_ads" = "Hide advertisements";
+"by_purchasing_it" = "Purchase this service to hide all \nadvertisments in the application.";
+"purchase_price" = "Purchase";
+"by_purchasing_it_success" = "This item has been bought.";
+"restore_purchase" = "Restore purchase";
+//"get_in_app_billing" = "Get in-app billing";
+//"would_you_like_to" = "Would you like to purchase magic stones with 200?";
+
+//retry upload image
+"message_retry_upload" = "The image was not uploaded";
+"redo" = "Redo";
+"delete_upload" = "Delete";
+
+//datepicker
+"datepicker" = "Select date";
+
+//remove topic, user
+"topic_is_deleted" = "This topic is forced stopping.";
+"user_is_deleted" = "This account is forced stopping.";
+
+// introduction
+"btn_next" = "Skip";
+"introduction_page1_title" = "Welcome to LocoBee!";
+"introduction_page1_description" = "LocoBee allows travelers to get connected to LOCO(local people)";
+"introduction_page2_title" = "Ask questions";
+"introduction_page2_description" = "Ask LOCO about sightseeing spots, good restaurants, and troubleshooting tips";
+"introduction_page3_title" = "Communicate";
+"introduction_page3_description" = "Enjoy chatting with LOCO communicating/speaking in your language";
+"introduction_page4_title" = "Enjoy New feeling of Travel";
+"introduction_page4_description" = "Chat, and sometimes share fan time with LOCO\nYour Journey will have more Local Experience with LocoBee";
