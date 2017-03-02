@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  IOSBase
+
+  Created by paraline on 2/27/17.
+  Copyright © 2017 paraline. All rights reserved.
+*/
+
+//common
+"ok" = "OK";
+"cancel" = "Cancel";
+
+//message error api
+"message_error_network" = "You are not connected to the internet.";
+"error_code_common" = "Connection to the server failed. \nPlease wait a few moments and try again.";
+"error_code_common_with_error_code" = "An error has occurred %@. Please try again you wait for a while.";
+"error_10001" = "The session timed out. Connection to the server ended due to being logged in for a long time with no activity. Please login again.";
